@@ -20,7 +20,7 @@ class SecondActivity : AppCompatActivity() {
         intent.extras?.let {
             if(it.containsKey("EXTRA_NAME_KEY")){
                 val name = it.getString("EXTRA_NAME_KEY", "")
-                labelName.text = name
+                // labelName.text = name
             //Toast.makeText(this, "Mi nombre es: $name", Toast.LENGTH_SHORT).show()
             }
             if(it.containsKey("EXTRA_AGE_KEY")){
@@ -33,6 +33,17 @@ class SecondActivity : AppCompatActivity() {
             if(it.containsKey("EXTRA_OPTION")){
                 val option = it.getBoolean("EXTRA_OPTION", true)
                 Toast.makeText(this, "Mi opción es: $option", Toast.LENGTH_LONG).show()
+            }
+
+            if (it.containsKey("EXTRA_MORE_INFO")){
+                //Se obtiene bundle
+                val extraInfo = it.getBundle("EXTRA_MORE_INFO")
+
+                //Se saca información del bundle obtenido
+                val surname = extraInfo?.getString("EXTRA_SURNAME", "")
+                val isMarried = extraInfo?.getBoolean("EXTRA_MARRIED")
+
+                labelName.text = "Surname: $surname\nMarried: ${if (isMarried == true) "Yes" else "No"}"
             }
         }
 

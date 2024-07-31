@@ -1,6 +1,8 @@
 package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios1.explicitintent
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -12,5 +14,15 @@ class ThirdActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
 
+        val btnSendActivity = findViewById<Button>(R.id.btnSendActivity)
+
+        btnSendActivity.setOnClickListener {
+            val intent = Intent(this, SecondActivity::class.java).apply {
+                putExtra("EXTRA_NAME_KEY", "Israel")
+                putExtra("EXTRA_OPTION", true)
+            }
+
+            startActivity(intent)
+        }
     }
 }
