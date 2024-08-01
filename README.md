@@ -1,4 +1,4 @@
-# Equipo4_Modulo4
+# Equipo 4 - Módulo 4
 
 ## Integrantes
 
