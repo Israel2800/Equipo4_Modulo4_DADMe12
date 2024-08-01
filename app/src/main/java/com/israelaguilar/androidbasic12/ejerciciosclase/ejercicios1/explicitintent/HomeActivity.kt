@@ -53,14 +53,14 @@ class HomeActivity : AppCompatActivity() {
         }
 
         // Calling fourth activity
-        /*var btnSendActivity4 = findViewById<Button>(btnSendActivity4)
+        var btnSendActivity4 = findViewById<Button>(btnSendActivity4)
 
         btnSendActivity4.setOnClickListener {
             val intent2 = Intent(this, FourthActivity::class.java).apply {
-
+                putExtra("EXTRA_USERNAME", "Israel2800")
             }
-
             register.launch(intent2)
-        }*/
+
+        }
     }
 }

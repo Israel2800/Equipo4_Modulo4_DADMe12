@@ -16,7 +16,7 @@ class SecondActivity : AppCompatActivity() {
         val labelName = findViewById<TextView>(R.id.labelName)
         val btnReturn = findViewById<Button>(R.id.btnReturn)
 
-        // Otra forma de representar it es: extras -> ------ if(extras.containsKey){}
+        // Otra forma de representar it es, después de "let {" colocar: extras -> ------ if(extras.containsKey){}
         intent.extras?.let {
             if(it.containsKey("EXTRA_NAME_KEY")){
                 val name = it.getString("EXTRA_NAME_KEY", "")
@@ -31,7 +31,7 @@ class SecondActivity : AppCompatActivity() {
            /* val surname = it.getString("EXTRA_SURNAME", "")
             Toast.makeText(this, "Mi edad es: $age, mi apellido es: $surname", Toast.LENGTH_LONG).show()*/
             if(it.containsKey("EXTRA_OPTION")){
-                val option = it.getBoolean("EXTRA_OPTION", true)
+                val option = it.getBoolean("EXTRA_OPTION", false)
                 Toast.makeText(this, "Mi opción es: $option", Toast.LENGTH_LONG).show()
             }
 
@@ -50,7 +50,7 @@ class SecondActivity : AppCompatActivity() {
         btnReturn.setOnClickListener {
             val resultIntent = Intent().apply{
                 putExtra("EXTRA_IS_CORRECT_KEY", true)
-        }
+            }
             setResult(RESULT_OK, resultIntent)
             finish()
         }
