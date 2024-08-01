@@ -9,6 +9,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.israelaguilar.androidbasic12.R
 import com.israelaguilar.androidbasic12.R.id.btnSendActivity4
+import com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios1.actividad.FifthActivity
 import com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios1.actividad.FourthActivity
 
 class HomeActivity : AppCompatActivity() {
@@ -31,7 +32,10 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        var btnSendActivity = findViewById<Button>(R.id.btnSendActivity)
+        val btnSendActivity = findViewById<Button>(R.id.btnSendActivity)
+        val btnSendActivity3 = findViewById<Button>(R.id.btnSendActivity3)
+        val btnSendActivity4 = findViewById<Button>(R.id.btnSendActivity4)
+        val btnSendActivity5 = findViewById<Button>(R.id.btnSendActivity5)
 
         btnSendActivity.setOnClickListener {
 
@@ -52,15 +56,29 @@ class HomeActivity : AppCompatActivity() {
 
         }
 
-        // Calling fourth activity
-        /*var btnSendActivity4 = findViewById<Button>(btnSendActivity4)
-
-        btnSendActivity4.setOnClickListener {
-            val intent2 = Intent(this, FourthActivity::class.java).apply {
-
+        // Calling third activity
+        btnSendActivity3.setOnClickListener {
+            val intent = Intent(this, SecondActivity::class.java).apply {
+                putExtra("EXTRA_NAME_KEY", "Israel")
+                putExtra("EXTRA_OPTION", true)
             }
 
+            startActivity(intent)
+        }
+
+        // Calling fourth activity
+        btnSendActivity4.setOnClickListener {
+            val intent2 = Intent(this, FourthActivity::class.java).apply {
+                putExtra("EXTRA_USERNAME", "Israel2800")
+            }
             register.launch(intent2)
-        }*/
+        }
+
+        // Calling fifth activity
+        btnSendActivity5.setOnClickListener {
+            val intent3 = Intent(this, FifthActivity::class.java).apply {
+            }
+            register.launch(intent3)
+        }
     }
 }
