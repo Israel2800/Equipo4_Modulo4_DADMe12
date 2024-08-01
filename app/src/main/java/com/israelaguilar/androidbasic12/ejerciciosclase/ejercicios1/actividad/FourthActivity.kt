@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.israelaguilar.androidbasic12.R
 
@@ -20,7 +21,7 @@ class FourthActivity : AppCompatActivity() {
         btnSendUrlGitHub.setOnClickListener {
             val urlIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Israel2800/Equipo4_Modulo4_DADMe12"))
             startActivity(Intent.createChooser(urlIntent, "Abrir usando: "))
-
+            Toast.makeText(this, "Abriendo repositorio", Toast.LENGTH_LONG).show()
         }
 
         intent.extras?.let { extras ->

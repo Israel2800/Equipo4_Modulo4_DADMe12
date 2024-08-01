@@ -14,15 +14,7 @@ class ThirdActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
 
-        val btnSendActivity = findViewById<Button>(R.id.btnSendActivity)
 
-        btnSendActivity.setOnClickListener {
-            val intent = Intent(this, SecondActivity::class.java).apply {
-                putExtra("EXTRA_NAME_KEY", "Israel")
-                putExtra("EXTRA_OPTION", true)
-            }
 
-            startActivity(intent)
-        }
     }
 }
