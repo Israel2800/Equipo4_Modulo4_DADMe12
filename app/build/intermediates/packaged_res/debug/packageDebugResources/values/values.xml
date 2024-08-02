@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="colorAccentCustom">#900C3F</color>
+    <color name="colorPrimaryCustom">#FF5733</color>
+    <color name="colorPrimaryDarkCustom">#C70039</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">AndroidBasic12</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        
+        <item name="colorPrimary">@color/colorPrimaryCustom</item>
+        
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkCustom</item>
+        
+        <item name="colorAccent">@color/colorAccentCustom</item>
+        
+        <item name="android:statusBarColor">@color/colorPrimaryDarkCustom</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryCustom</item>
+    </style>
+    <style name="Base.Theme.AndroidBasic12" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.AndroidBasic12" parent="Base.Theme.AndroidBasic12"/>
+</resources>

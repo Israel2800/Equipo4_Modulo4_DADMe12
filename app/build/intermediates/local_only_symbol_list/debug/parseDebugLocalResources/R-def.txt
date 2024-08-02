@@ -1,0 +1,36 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color colorAccentCustom
+color colorPrimaryCustom
+color colorPrimaryDarkCustom
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnReturn
+id btnSend
+id btnSendActivity
+id btnSendUrl
+id btnTestResult
+id labelName
+id main
+id result
+layout activity_1
+layout activity_2
+layout activity_creation_example_2
+layout activity_example
+layout activity_home
+layout activity_implicit_intent
+layout activity_intent_implicito
+layout activity_life_cycle
+layout activity_main
+layout activity_second
+layout activity_third
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style AppTheme
+style Base.Theme.AndroidBasic12
+style Theme.AndroidBasic12
+xml backup_rules
+xml data_extraction_rules
