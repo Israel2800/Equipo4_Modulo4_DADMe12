@@ -32,6 +32,8 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+
         val btnSendActivity = findViewById<Button>(R.id.btnSendActivity)
         val btnSendActivity3 = findViewById<Button>(R.id.btnSendActivity3)
         val btnSendActivity4 = findViewById<Button>(R.id.btnSendActivity4)
