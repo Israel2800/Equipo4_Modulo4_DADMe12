@@ -7,9 +7,111 @@
     android:layout_height="match_parent"
     tools:context=".ejerciciosclase.ejercicios2.actividad.HomeComponentsActivity">
 
-  <LinearLayout
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/section1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageBtnActivity1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_bright"
+                android:contentDescription="Activity 1: Actualizar Información"
+                android:gravity="center"
+                android:src="@mipmap/ic_launcher"
+                android:text="Activity 1: Actualizar Información"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:text="Activity 1: Actualizar Información"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/section2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="top|center"
+                    android:text="Menú de opciones"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Integrantes:\nIsrael Aguilar\nLuz Itzel Valdeolivar Hernández"
+                    android:textAlignment="center" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/section3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:text="Activity 2: Configuración"
+                android:textColor="@android:color/white" />
+
+            <ImageButton
+                android:id="@+id/imageBtnActivity2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_bright"
+                android:contentDescription="Activity 2: Configuración"
+                android:gravity="center"
+                android:src="@mipmap/ic_launcher"
+                android:text="Activity 2: Configuración"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
