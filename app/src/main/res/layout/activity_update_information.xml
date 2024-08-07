@@ -113,7 +113,7 @@
             android:id="@+id/btnUpdatePassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="25dp"
             android:text="Actualizar"
             android:textAllCaps="true"
             app:layout_constraintEnd_toEndOf="parent"
@@ -122,16 +122,6 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/tvReturn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:text="Regresar al menú"
-        android:textSize="16sp" />
 
 
 </RelativeLayout>
