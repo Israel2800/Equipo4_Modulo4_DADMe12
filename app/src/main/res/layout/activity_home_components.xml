@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@android:color/system_accent1_200"
+                android:background="@android:color/holo_blue_bright"
                 android:contentDescription="Activity 1: Actualizar Información"
                 android:gravity="center"
                 android:src="@mipmap/ic_launcher"
@@ -38,7 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@android:color/system_accent1_800"
+                android:background="@android:color/holo_blue_dark"
                 android:gravity="center"
                 android:text="Activity 1: Actualizar Información"
                 android:textColor="@android:color/white" />
@@ -62,7 +62,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="20dp"
                     android:gravity="top|center"
                     android:text="Menú de opciones"
                     android:textSize="22sp" />
@@ -90,7 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@android:color/system_accent1_800"
+                android:background="@android:color/holo_blue_dark"
                 android:gravity="center"
                 android:text="Activity 2: Configuración"
                 android:textColor="@android:color/white" />
@@ -100,7 +100,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@android:color/system_accent1_200"
+                android:background="@android:color/holo_blue_bright"
                 android:contentDescription="Activity 2: Configuración"
                 android:gravity="center"
                 android:src="@mipmap/ic_launcher"
