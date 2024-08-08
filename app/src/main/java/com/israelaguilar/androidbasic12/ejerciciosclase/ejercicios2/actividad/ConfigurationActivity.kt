@@ -2,10 +2,9 @@ package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.actividad
 
 import android.os.Bundle
 import android.view.MenuItem
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.israelaguilar.androidbasic12.R
 
 class ConfigurationActivity : AppCompatActivity() {
@@ -16,11 +15,26 @@ class ConfigurationActivity : AppCompatActivity() {
         supportActionBar?.setDisplayShowTitleEnabled(false)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        val list = findViewById<RecyclerView>(R.id.settingsList)
+
+        val data = listOf(
+            SettingEntity("Cuenta", ""),
+            SettingEntity("Privacidad", ""),
+            SettingEntity("Notificaciones", ""),
+            SettingEntity("Almacenamiento", ""),
+            SettingEntity("Ayuda", "")
+        )
+
+
+        val adapter = SettingAdapter(data)
+        list.adapter = adapter
+        list.layoutManager = LinearLayoutManager(this)
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            android.R.id.home ->{
+        when (item.itemId) {
+            android.R.id.home -> {
                 onBackPressedDispatcher.onBackPressed()
             }
         }
