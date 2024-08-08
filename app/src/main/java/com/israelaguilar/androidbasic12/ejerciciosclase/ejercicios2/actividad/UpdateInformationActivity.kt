@@ -1,8 +1,10 @@
 package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.actividad
 
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.ArrayAdapter
 import android.widget.Spinner
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -13,6 +15,9 @@ class UpdateInformationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_update_information)
+
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val spinnerMexicanStates = findViewById<Spinner>(R.id.spinnerMexicanStates)
 
@@ -60,5 +65,16 @@ class UpdateInformationActivity : AppCompatActivity() {
 
         spinnerMexicanStates.adapter = adapter
 
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            android.R.id.home ->{
+                onBackPressedDispatcher.onBackPressed()
+                // Toast.makeText(this, "Click en back", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
     }
 }
