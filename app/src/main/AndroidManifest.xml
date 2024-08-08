@@ -17,12 +17,10 @@
             android:exported="false" />
         <activity
             android:name=".ejerciciosclase.ejercicios2.componentesgraficos.list.PersonListActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".ejerciciosclase.ejercicios2.componentesgraficos.list.AnimalListActivity"
-            android:exported="false"></activity>
+            android:exported="false"/>
         <activity
             android:name=".tarea.MenuActivity"
             android:exported="false" />
@@ -32,13 +30,11 @@
         <activity
             android:name=".ejerciciosclase.ejercicios2.actividad.HomeComponentsActivity"
             android:exported="true" >
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".ejerciciosclase.ejercicios2.componentesgraficos.ComponentsActivity"
@@ -54,7 +50,7 @@
             android:exported="false" />
         <activity
             android:name=".ejerciciosclase.ejercicios2.componentesgraficos.FrameLayoutActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ejerciciosclase.ejercicios1.actividad.FifthActivity"
             android:exported="false" />
