@@ -18,11 +18,11 @@ class ConfigurationActivity : AppCompatActivity() {
         val list = findViewById<RecyclerView>(R.id.settingsList)
 
         val data = listOf(
-            SettingEntity("Cuenta",""),
-            SettingEntity("Privacidad",""),
-            SettingEntity("Notificaciones",""),
-            SettingEntity("Almacenamiento",""),
-            SettingEntity("Ayuda","")
+            SettingEntity("Cuenta", ""),
+            SettingEntity("Privacidad", ""),
+            SettingEntity("Notificaciones", ""),
+            SettingEntity("Almacenamiento", ""),
+            SettingEntity("Ayuda", "")
         )
 
 
@@ -33,8 +33,8 @@ class ConfigurationActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            android.R.id.home ->{
+        when (item.itemId) {
+            android.R.id.home -> {
                 onBackPressedDispatcher.onBackPressed()
             }
         }
