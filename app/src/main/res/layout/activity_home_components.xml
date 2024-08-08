@@ -18,46 +18,43 @@
         <LinearLayout
             android:id="@+id/section1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/imageBtnActivity1"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@android:color/holo_blue_bright"
+                android:background="@android:color/white"
                 android:contentDescription="Activity 1: Actualizar Información"
-                android:gravity="center"
-                android:src="@mipmap/ic_launcher"
-                android:text="Activity 1: Actualizar Información"
-                android:textColor="@android:color/white" />
+                android:scaleType="fitXY"
+                android:src="@drawable/update_information" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@android:color/holo_blue_dark"
+                android:paddingHorizontal="8dp"
                 android:gravity="center"
-                android:text="Activity 1: Actualizar Información"
+                android:text="Activity 1: Actualizar Información\n\nDa clic en la imagen"
                 android:textColor="@android:color/white" />
-
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/section2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:color/white"
-                android:textColor="@android:color/black">
+                android:background="@android:color/white">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -81,37 +78,32 @@
         <LinearLayout
             android:id="@+id/section3"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
-
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@android:color/holo_blue_dark"
+                android:paddingHorizontal="8dp"
                 android:gravity="center"
-                android:text="Activity 2: Configuración"
+                android:text="Activity 2: Configuración\n\nDa clic en la imagen"
                 android:textColor="@android:color/white" />
 
             <ImageButton
                 android:id="@+id/imageBtnActivity2"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@android:color/holo_blue_bright"
+                android:background="@android:color/white"
                 android:contentDescription="Activity 2: Configuración"
-                android:gravity="center"
-                android:src="@mipmap/ic_launcher"
-                android:text="Activity 2: Configuración"
-                android:textColor="@android:color/white" />
-
+                android:scaleType="fitXY"
+                android:src="@drawable/configuration" />
 
         </LinearLayout>
 
-
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
