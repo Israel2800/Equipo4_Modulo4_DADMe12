@@ -30,6 +30,7 @@
             android:id="@+id/allFields"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -89,20 +90,38 @@
                     android:text="Correo electrónico" />
 
             </RadioGroup>
-            |
+
+            <TextView
+                android:id="@+id/tvSpinner"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Estado actual:" />
+
+            <Spinner
+                android:id="@+id/spinnerMexicanStates"
+                app:layout_constraintTop_toBottomOf="@id/tvSpinner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
 
             <TextView
                 android:id="@+id/tvCheckBox"
+                app:layout_constraintTop_toBottomOf="@id/spinnerMexicanStates"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="De clic en el checkbox para continuar:" />
 
             <CheckBox
-                android:id="@+id/cbCreditCard"
+                android:id="@+id/cbAcceptChanges"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:text="Aceptar cambios"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
