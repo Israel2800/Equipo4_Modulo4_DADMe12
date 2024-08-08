@@ -70,7 +70,7 @@
                 android:id="@+id/rgVerificationMethods"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:orientation="horizontal">
 
                 <RadioButton
@@ -103,7 +103,7 @@
                 app:layout_constraintTop_toBottomOf="@id/tvSpinner"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content" />
 
@@ -121,7 +121,7 @@
                 android:id="@+id/cbAcceptChanges"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:text="Aceptar cambios"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -132,7 +132,7 @@
             android:id="@+id/btnUpdatePassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="5dp"
             android:text="Actualizar"
             android:textAllCaps="true"
             app:layout_constraintEnd_toEndOf="parent"
