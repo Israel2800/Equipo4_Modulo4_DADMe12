@@ -16,11 +16,18 @@ class HomeComponentsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home_components)
 
         val imageBtnActivity1 = findViewById<ImageButton>(R.id.imageBtnActivity1)
-
+        val imageBtnActivity2 = findViewById<ImageButton>(R.id.imageBtnActivity2)
         imageBtnActivity1.setOnClickListener {
             val intent = Intent(this, UpdateInformationActivity::class.java).apply {
             }
             startActivity(intent)
+
+        }
+
+        imageBtnActivity2.setOnClickListener {
+            val intent2 = Intent(this, ConfigurationActivity::class.java).apply {
+            }
+            startActivity(intent2)
 
         }
 
