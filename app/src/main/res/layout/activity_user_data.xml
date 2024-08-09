@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".tarea.israel.UserDataActivity">
+
+    <RelativeLayout
+        android:layout_marginHorizontal="20dp"
+        android:paddingBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvUserData"
+            android:text="Usuario registrado"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/ivUserPhoto"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/user"
+            android:layout_width="180dp"
+            android:layout_below="@+id/tvUserData"
+            android:layout_marginTop="30dp"
+            android:layout_height="180dp" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:textSize="18sp"
+            android:layout_below="@+id/ivUserPhoto"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/tvUserLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apellido:"
+            android:textSize="18sp"
+            android:layout_below="@id/tvUserName"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tvUserTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Título:"
+            android:textSize="18sp"
+            android:layout_below="@id/tvUserLastName"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tvUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correo:"
+            android:textSize="18sp"
+            android:layout_below="@id/tvUserTitle"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tvUserSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexo:"
+            android:textSize="18sp"
+            android:layout_below="@id/tvUserEmail"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tvUserPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contraseña:"
+            android:textSize="18sp"
+            android:layout_below="@id/tvUserSex"
+            android:layout_marginTop="20dp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
