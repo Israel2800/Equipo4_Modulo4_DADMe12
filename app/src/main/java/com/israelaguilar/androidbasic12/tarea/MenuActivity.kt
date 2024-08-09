@@ -1,21 +1,54 @@
 package com.israelaguilar.androidbasic12.tarea
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.israelaguilar.androidbasic12.R
+import com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.actividad.ConfigurationActivity
+import com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.actividad.UpdateInformationActivity
+import com.israelaguilar.androidbasic12.tarea.israel.UserSignUpActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_menu)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val imageBtnIsrael = findViewById<ImageButton>(R.id.imageBtnIsrael)
+        val imageBtnItzel = findViewById<ImageButton>(R.id.imageBtnItzel)
+        val tvIsrael = findViewById<TextView>(R.id.tvIsrael)
+        val tvItzel = findViewById<TextView>(R.id.tvItzel)
+
+        imageBtnIsrael.setOnClickListener {
+            val intent = Intent(this, UserSignUpActivity::class.java).apply {
+            }
+            startActivity(intent)
+
+        }
+
+        tvIsrael.setOnClickListener {
+            val intent = Intent(this, UserSignUpActivity::class.java).apply {
+            }
+            startActivity(intent)
+
+        }
+
+        imageBtnItzel.setOnClickListener {
+            val intent = Intent(this, ConfigurationActivity::class.java).apply {
+            }
+            startActivity(intent)
+
+        }
+
+        tvItzel.setOnClickListener {
+            val intent2 = Intent(this, ConfigurationActivity::class.java).apply {
+            }
+            startActivity(intent2)
+
         }
     }
 }
