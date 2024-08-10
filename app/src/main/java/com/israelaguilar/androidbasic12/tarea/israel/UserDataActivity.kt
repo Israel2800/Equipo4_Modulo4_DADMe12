@@ -24,6 +24,7 @@ class UserDataActivity : AppCompatActivity() {
         val userEmail = intent.getStringExtra("USER_EMAIL")
         val userSex = intent.getStringExtra("USER_SEX")
         val userPassword = intent.getStringExtra("USER_PASSWORD")
+
         // Mostrar datos en interfaz
         findViewById<TextView>(R.id.tvUserName).text = "Nombre: $userName"
         findViewById<TextView>(R.id.tvUserLastName).text = "Apellido: $userLastName"
