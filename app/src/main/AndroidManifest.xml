@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -17,6 +19,9 @@
             android:exported="false" />
         <activity
             android:name=".tarea.itzel.SingUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ejerciciosclase.ejercicios2.componentesgraficos.list.AnimalDetailActivity"
             android:exported="false" />
         <activity
             android:name=".tarea.israel.UserDataActivity"
@@ -62,7 +67,7 @@
             android:exported="false" />
         <activity
             android:name=".ejerciciosclase.ejercicios2.componentesgraficos.FrameLayoutActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".ejerciciosclase.ejercicios1.actividad.FifthActivity"
             android:exported="false" />
