@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tarea.itzel.SingUpActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tvCrtAccnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:paddingHorizontal="30dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Registro"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:layout_marginBottom="130dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/llGetInfo" />
+
+            <LinearLayout
+                android:id="@+id/llGetInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:hint="Nombre"
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/etLName"
+                    android:hint="Apellio"
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rgGender"
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbMujer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="1"
+                        android:text="Mujer" />
+
+                    <RadioButton
+                        android:id="@+id/rbHombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_weight="1"
+                        android:text="Hombre" />
+
+                    <RadioButton
+                        android:id="@+id/rbNBinario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_weight="1"
+                        android:text="No Binario" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tvMonth"
+                    android:text="Mes de nacimiento:"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"/>
+
+                <Spinner
+                    android:id="@+id/spinnerMonth"
+                    app:layout_constraintTop_toBottomOf="@id/tvMonth"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_weight="1"
+                    android:layout_width="250dp"
+                    android:layout_height="0dp" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:hint="Correo electrónico"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:hint="Contraseña"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"/>
+
+                <CheckBox
+                    android:id="@+id/cbTermsAnsConds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dp"
+                    android:text="Acepto los término y condiciones"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Registrarme"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llGetInfo" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
