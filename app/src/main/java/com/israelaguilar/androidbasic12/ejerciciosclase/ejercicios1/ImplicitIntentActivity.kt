@@ -12,6 +12,7 @@ class ImplicitIntentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_implicit_intent)
 
+        // Se generan instancias de botones
         val btnSend = findViewById<Button>(R.id.btnSend)
         val btnSendUrl = findViewById<Button>(R.id.btnSendUrl)
 
