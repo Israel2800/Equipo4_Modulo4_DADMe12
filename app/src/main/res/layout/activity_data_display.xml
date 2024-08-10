@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tarea.itzel.DataDisplayActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tvCrtAccnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_dark"
+                android:paddingHorizontal="30dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Registro Exitoso"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:layout_marginBottom="70dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/llGetInfo" />
+
+            <LinearLayout
+                android:id="@+id/llGetInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/tvNameOut"
+                    android:text="Nombre:"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tvLNameOut"
+                    android:text="Apellido:"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tvGenderOut"
+                    android:text="Género:"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tvMonthOut"
+                    android:text="Mes de nacimiento:"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:text="Su Usuario y contraseña son:"
+                    android:textSize="15dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tvEmailOut"
+                    android:text=" "
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tvPasswordOut"
+                    android:text=" "
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

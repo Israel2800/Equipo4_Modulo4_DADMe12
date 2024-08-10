@@ -12,6 +12,8 @@ import com.israelaguilar.androidbasic12.R
 import com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.actividad.ConfigurationActivity
 import com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.actividad.UpdateInformationActivity
 import com.israelaguilar.androidbasic12.tarea.israel.UserSignUpActivity
+import com.israelaguilar.androidbasic12.tarea.itzel.DataDisplayActivity
+import com.israelaguilar.androidbasic12.tarea.itzel.SingUpActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,28 +29,27 @@ class MenuActivity : AppCompatActivity() {
             val intent = Intent(this, UserSignUpActivity::class.java).apply {
             }
             startActivity(intent)
-
         }
+
 
         tvIsrael.setOnClickListener {
             val intent = Intent(this, UserSignUpActivity::class.java).apply {
             }
             startActivity(intent)
-
         }
+
 
         imageBtnItzel.setOnClickListener {
-            val intent = Intent(this, ConfigurationActivity::class.java).apply {
+            val intent = Intent(this, SingUpActivity::class.java).apply {
             }
             startActivity(intent)
-
         }
 
+
         tvItzel.setOnClickListener {
-            val intent2 = Intent(this, ConfigurationActivity::class.java).apply {
+            val intent2 = Intent(this, SingUpActivity::class.java).apply {
             }
             startActivity(intent2)
-
         }
     }
 }

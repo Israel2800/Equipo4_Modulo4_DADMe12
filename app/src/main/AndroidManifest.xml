@@ -24,6 +24,12 @@
             android:name=".ejerciciosclase.ejercicios2.componentesgraficos.viewbinding.ViewBindingExampleActivity"
             android:exported="false" />
         <activity
+            android:name=".tarea.itzel.DataDisplayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tarea.itzel.SingUpActivity"
+            android:exported="false" />
+        <activity
             android:name=".ejerciciosclase.ejercicios2.componentesgraficos.list.AnimalDetailActivity"
             android:exported="false" />
         <activity
