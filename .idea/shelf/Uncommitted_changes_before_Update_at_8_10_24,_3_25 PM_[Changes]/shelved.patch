@@ -1,0 +1,1829 @@
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:tools=\"http://schemas.android.com/tools\">\n\n    <application\n        android:allowBackup=\"true\"\n        android:dataExtractionRules=\"@xml/data_extraction_rules\"\n        android:fullBackupContent=\"@xml/backup_rules\"\n        android:icon=\"@mipmap/ic_launcher\"\n        android:label=\"@string/app_name\"\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\n        android:supportsRtl=\"true\"\n        android:theme=\"@style/Theme.AndroidBasic12\"\n        tools:targetApi=\"31\">\n        <activity\n            android:name=\".tarea.israel.UserDataActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".tarea.israel.UserSignUpActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios2.actividad.UpdateInformationActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios2.componentesgraficos.list.PersonListActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios2.componentesgraficos.list.AnimalListActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".tarea.MenuActivity\"\n            android:exported=\"true\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.MAIN\" />\n\n                <category android:name=\"android.intent.category.LAUNCHER\" />\n            </intent-filter>\n        </activity>\n        <activity\n            android:name=\".ejerciciosclase.ejercicios2.actividad.ConfigurationActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios2.actividad.HomeComponentsActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios2.componentesgraficos.ComponentsActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios2.componentesgraficos.ConstraintLayoutActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios2.componentesgraficos.RelativeLayoutActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios2.componentesgraficos.LinearLayoutActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios2.componentesgraficos.FrameLayoutActivity\"\n            android:exported=\"true\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios1.actividad.FifthActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios1.actividad.FourthActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios1.explicitintent.ThirdActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios1.explicitintent.SecondActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios1.explicitintent.HomeActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios1.ImplicitIntentActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios1.CreationExample2Activity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios1.ExampleActivity\"\n            android:exported=\"false\" />\n        <activity\n            android:name=\".ejerciciosclase.ejercicios1.LifeCycleActivity\"\n            android:exported=\"false\" />\n    </application>\n\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision 3d1ebbb30d7666fd9593af57b4cb41b4b2aabbb0)
++++ b/app/src/main/AndroidManifest.xml	(date 1723321446847)
+@@ -2,6 +2,8 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools">
+ 
++    <uses-permission android:name="android.permission.INTERNET" />
++
+     <application
+         android:allowBackup="true"
+         android:dataExtractionRules="@xml/data_extraction_rules"
+@@ -13,6 +15,24 @@
+         android:theme="@style/Theme.AndroidBasic12"
+         tools:targetApi="31">
+         <activity
++            android:name=".ejerciciosclase.ejercicios2.fragment.params.ParamsActivity"
++            android:exported="false" />
++        <activity
++            android:name=".ejerciciosclase.ejercicios2.fragment.FragmentActivity"
++            android:exported="false" />
++        <activity
++            android:name=".ejerciciosclase.ejercicios2.componentesgraficos.viewbinding.ViewBindingExampleActivity"
++            android:exported="false" />
++        <activity
++            android:name=".tarea.itzel.DataDisplayActivity"
++            android:exported="false" />
++        <activity
++            android:name=".tarea.itzel.SingUpActivity"
++            android:exported="false" />
++        <activity
++            android:name=".ejerciciosclase.ejercicios2.componentesgraficos.list.AnimalDetailActivity"
++            android:exported="false" />
++        <activity
+             android:name=".tarea.israel.UserDataActivity"
+             android:exported="false" />
+         <activity
+@@ -29,7 +49,7 @@
+             android:exported="false" />
+         <activity
+             android:name=".tarea.MenuActivity"
+-            android:exported="true">
++            android:exported="true" >
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+ 
+@@ -56,7 +76,7 @@
+             android:exported="false" />
+         <activity
+             android:name=".ejerciciosclase.ejercicios2.componentesgraficos.FrameLayoutActivity"
+-            android:exported="true" />
++            android:exported="false" />
+         <activity
+             android:name=".ejerciciosclase.ejercicios1.actividad.FifthActivity"
+             android:exported="false" />
+Index: app/src/main/res/layout/activity_view_binding_example.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_view_binding_example.xml b/app/src/main/res/layout/activity_view_binding_example.xml
+new file mode 100644
+--- /dev/null	(date 1723321446861)
++++ b/app/src/main/res/layout/activity_view_binding_example.xml	(date 1723321446861)
+@@ -0,0 +1,38 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:id="@+id/main"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".ejerciciosclase.ejercicios2.componentesgraficos.viewbinding.ViewBindingExampleActivity">
++
++    <TextView
++        android:id="@+id/tvName"
++        android:text="Text 1"
++        app:layout_constraintTop_toTopOf="parent"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content" />
++
++    <TextView
++        android:id="@+id/tvSurname"
++        android:text="Text 2"
++        app:layout_constraintTop_toBottomOf="@+id/tvName"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content" />
++
++    <TextView
++        android:id="@+id/tvLastName"
++        android:text="Text 3"
++        app:layout_constraintTop_toBottomOf="@+id/tvSurname"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content" />
++
++    <TextView
++        android:id="@+id/tvFinal"
++        android:text="Text 4"
++        app:layout_constraintTop_toBottomOf="@+id/tvLastName"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content" />
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/israelaguilar/androidbasic12/tarea/MenuActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.israelaguilar.androidbasic12.tarea\n\nimport android.content.Intent\nimport android.os.Bundle\nimport android.widget.ImageButton\nimport android.widget.TextView\nimport androidx.activity.enableEdgeToEdge\nimport androidx.appcompat.app.AppCompatActivity\nimport androidx.core.view.ViewCompat\nimport androidx.core.view.WindowInsetsCompat\nimport com.israelaguilar.androidbasic12.R\nimport com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.actividad.ConfigurationActivity\nimport com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.actividad.UpdateInformationActivity\nimport com.israelaguilar.androidbasic12.tarea.israel.UserSignUpActivity\n\nclass MenuActivity : AppCompatActivity() {\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_menu)\n\n        val imageBtnIsrael = findViewById<ImageButton>(R.id.imageBtnIsrael)\n        val imageBtnItzel = findViewById<ImageButton>(R.id.imageBtnItzel)\n        val tvIsrael = findViewById<TextView>(R.id.tvIsrael)\n        val tvItzel = findViewById<TextView>(R.id.tvItzel)\n\n        imageBtnIsrael.setOnClickListener {\n            val intent = Intent(this, UserSignUpActivity::class.java).apply {\n            }\n            startActivity(intent)\n\n        }\n\n        tvIsrael.setOnClickListener {\n            val intent = Intent(this, UserSignUpActivity::class.java).apply {\n            }\n            startActivity(intent)\n\n        }\n\n        imageBtnItzel.setOnClickListener {\n            val intent = Intent(this, ConfigurationActivity::class.java).apply {\n            }\n            startActivity(intent)\n\n        }\n\n        tvItzel.setOnClickListener {\n            val intent2 = Intent(this, ConfigurationActivity::class.java).apply {\n            }\n            startActivity(intent2)\n\n        }\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/tarea/MenuActivity.kt b/app/src/main/java/com/israelaguilar/androidbasic12/tarea/MenuActivity.kt
+--- a/app/src/main/java/com/israelaguilar/androidbasic12/tarea/MenuActivity.kt	(revision 3d1ebbb30d7666fd9593af57b4cb41b4b2aabbb0)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/tarea/MenuActivity.kt	(date 1723321446852)
+@@ -12,6 +12,8 @@
+ import com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.actividad.ConfigurationActivity
+ import com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.actividad.UpdateInformationActivity
+ import com.israelaguilar.androidbasic12.tarea.israel.UserSignUpActivity
++import com.israelaguilar.androidbasic12.tarea.itzel.DataDisplayActivity
++import com.israelaguilar.androidbasic12.tarea.itzel.SingUpActivity
+ 
+ class MenuActivity : AppCompatActivity() {
+     override fun onCreate(savedInstanceState: Bundle?) {
+@@ -27,28 +29,27 @@
+             val intent = Intent(this, UserSignUpActivity::class.java).apply {
+             }
+             startActivity(intent)
+-
+         }
++
+ 
+         tvIsrael.setOnClickListener {
+             val intent = Intent(this, UserSignUpActivity::class.java).apply {
+             }
+             startActivity(intent)
+-
+         }
++
+ 
+         imageBtnItzel.setOnClickListener {
+-            val intent = Intent(this, ConfigurationActivity::class.java).apply {
++            val intent = Intent(this, SingUpActivity::class.java).apply {
+             }
+             startActivity(intent)
+-
+         }
++
+ 
+         tvItzel.setOnClickListener {
+-            val intent2 = Intent(this, ConfigurationActivity::class.java).apply {
++            val intent2 = Intent(this, SingUpActivity::class.java).apply {
+             }
+             startActivity(intent2)
+-
+         }
+     }
+ }
+\ No newline at end of file
+Index: app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalAdapter.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.componentesgraficos.list\n\nimport android.view.LayoutInflater\nimport android.view.View\nimport android.view.ViewGroup\nimport android.widget.ImageView\nimport android.widget.TextView\nimport androidx.recyclerview.widget.RecyclerView\nimport com.israelaguilar.androidbasic12.R\n\nclass AnimalAdapter(val list: List<AnimalEntity>) : RecyclerView.Adapter<AnimalAdapter.AnimalViewHolder>() {\n\n    class AnimalViewHolder(view:View): RecyclerView.ViewHolder(view){\n        val ivAnimal = view.findViewById<ImageView>(R.id.ivAnimal)\n        val tvAnimal = view.findViewById<TextView>(R.id.tvAnimal)\n        val tvColor = view.findViewById<TextView>(R.id.tvColor)\n\n        fun render(animalEntity: AnimalEntity) {\n            tvAnimal.text = animalEntity.name\n            tvColor.text = animalEntity.color\n        }\n\n    }\n\n    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AnimalViewHolder {\n        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_animal, parent, false)\n        return AnimalViewHolder(view)\n    }\n\n    override fun getItemCount(): Int = list.size\n\n    override fun onBindViewHolder(holder: AnimalViewHolder, position: Int) {\n        holder.render(list[position])\n    }\n\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalAdapter.kt b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalAdapter.kt
+--- a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalAdapter.kt	(revision 3d1ebbb30d7666fd9593af57b4cb41b4b2aabbb0)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalAdapter.kt	(date 1723321446848)
+@@ -3,21 +3,42 @@
+ import android.view.LayoutInflater
+ import android.view.View
+ import android.view.ViewGroup
++import android.widget.AdapterView.OnItemSelectedListener
+ import android.widget.ImageView
+ import android.widget.TextView
++import androidx.cardview.widget.CardView
++import androidx.core.content.res.ResourcesCompat
+ import androidx.recyclerview.widget.RecyclerView
+ import com.israelaguilar.androidbasic12.R
++import com.squareup.picasso.Picasso
+ 
+ class AnimalAdapter(val list: List<AnimalEntity>) : RecyclerView.Adapter<AnimalAdapter.AnimalViewHolder>() {
+ 
++    // Declarar lambda
++    var onItemSelected : ((AnimalEntity) -> Unit)? = null
++
+     class AnimalViewHolder(view:View): RecyclerView.ViewHolder(view){
+         val ivAnimal = view.findViewById<ImageView>(R.id.ivAnimal)
+         val tvAnimal = view.findViewById<TextView>(R.id.tvAnimal)
+         val tvColor = view.findViewById<TextView>(R.id.tvColor)
++        val animalCard = view.findViewById<CardView>(R.id.animalCard)
+ 
+-        fun render(animalEntity: AnimalEntity) {
++        fun render(animalEntity: AnimalEntity, onItemSelected : ((AnimalEntity) -> Unit)?) {
+             tvAnimal.text = animalEntity.name
+-            tvColor.text = animalEntity.color
++//            tvColor.text = animalEntity.color
++            tvColor.typeface = ResourcesCompat.getFont(tvColor.context, R.font.bernier_shade_regular)
++
++            // Invocar lambda
++            animalCard.setOnClickListener {
++                onItemSelected?.invoke(animalEntity)
++            }
++
++            Picasso.get()
++                .load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM1-2B5wjpFuyYrSCslCd0do7Do5-wcCwnOQ&usqp=CAU")
++                .placeholder(R.drawable.img_android)
++                .error(R.drawable.img_main_logo)
++                .into(ivAnimal)
++
+         }
+ 
+     }
+@@ -30,7 +51,7 @@
+     override fun getItemCount(): Int = list.size
+ 
+     override fun onBindViewHolder(holder: AnimalViewHolder, position: Int) {
+-        holder.render(list[position])
++        holder.render(list[position], onItemSelected)
+     }
+ 
+ }
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_params.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_params.xml b/app/src/main/res/layout/activity_params.xml
+new file mode 100644
+--- /dev/null	(date 1723321446860)
++++ b/app/src/main/res/layout/activity_params.xml	(date 1723321446860)
+@@ -0,0 +1,15 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:id="@+id/main"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".ejerciciosclase.ejercicios2.fragment.params.ParamsActivity">
++
++    <androidx.fragment.app.FragmentContainerView
++        android:id="@+id/fragmentParams"
++        android:layout_width="match_parent"
++        android:layout_height="match_parent" />
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_sing_up.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_sing_up.xml b/app/src/main/res/layout/activity_sing_up.xml
+new file mode 100644
+--- /dev/null	(date 1723321446860)
++++ b/app/src/main/res/layout/activity_sing_up.xml	(date 1723321446860)
+@@ -0,0 +1,164 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:id="@+id/main"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".tarea.itzel.SingUpActivity">
++
++
++
++    <RelativeLayout
++        android:layout_width="match_parent"
++        android:layout_height="match_parent">
++
++
++        <androidx.constraintlayout.widget.ConstraintLayout
++            android:layout_width="match_parent"
++            android:layout_height="match_parent"
++            android:layout_centerInParent="true">
++
++            <TextView
++                android:id="@+id/tvCrtAccnt"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:background="?attr/colorPrimary"
++                android:paddingHorizontal="30dp"
++                android:paddingTop="20dp"
++                android:paddingBottom="15dp"
++                android:text="Registro"
++                android:textColor="@android:color/white"
++                android:textSize="25dp"
++                android:layout_marginBottom="130dp"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintBottom_toTopOf="@id/llGetInfo" />
++
++            <LinearLayout
++                android:id="@+id/llGetInfo"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="10dp"
++                android:orientation="vertical"
++                app:layout_constraintBottom_toBottomOf="parent"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toTopOf="parent">
++
++                <EditText
++                    android:id="@+id/etName"
++                    android:hint="Nombre"
++                    android:layout_width="300dp"
++                    android:layout_height="0dp"
++                    android:layout_weight="1"
++                    android:paddingBottom="10dp"/>
++
++                <EditText
++                    android:id="@+id/etLName"
++                    android:hint="Apellio"
++                    android:layout_width="300dp"
++                    android:layout_height="0dp"
++                    android:layout_weight="1"
++                    android:paddingBottom="10dp"/>
++
++                <RadioGroup
++                    android:id="@+id/rgGender"
++                    android:layout_width="300dp"
++                    android:layout_height="0dp"
++                    android:layout_weight="1"
++                    android:layout_marginTop="5dp"
++                    android:orientation="horizontal">
++
++                    <RadioButton
++                        android:id="@+id/rbMujer"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_gravity="start"
++                        android:layout_weight="1"
++                        android:text="Mujer" />
++
++                    <RadioButton
++                        android:id="@+id/rbHombre"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_gravity="end"
++                        android:layout_weight="1"
++                        android:text="Hombre" />
++
++                    <RadioButton
++                        android:id="@+id/rbNBinario"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:layout_gravity="end"
++                        android:layout_weight="1"
++                        android:text="No Binario" />
++
++                </RadioGroup>
++
++                <TextView
++                    android:id="@+id/tvMonth"
++                    android:text="Mes de nacimiento:"
++                    android:textSize="15dp"
++                    android:layout_marginTop="15dp"
++                    android:layout_width="300dp"
++                    android:layout_height="0dp"
++                    android:layout_weight=".5"/>
++
++                <Spinner
++                    android:id="@+id/spinnerMonth"
++                    app:layout_constraintTop_toBottomOf="@id/tvMonth"
++                    app:layout_constraintStart_toStartOf="parent"
++                    android:layout_weight="1"
++                    android:layout_width="250dp"
++                    android:layout_height="0dp" />
++
++                <EditText
++                    android:id="@+id/etEmail"
++                    android:hint="Correo electrónico"
++                    android:layout_marginTop="15dp"
++                    android:layout_width="300dp"
++                    android:layout_height="0dp"
++                    android:layout_weight="1"
++                    android:paddingBottom="10dp"/>
++
++                <EditText
++                    android:id="@+id/etPassword"
++                    android:hint="Contraseña"
++                    android:layout_marginTop="5dp"
++                    android:layout_width="300dp"
++                    android:layout_height="0dp"
++                    android:layout_weight="1"
++                    android:paddingBottom="10dp"/>
++
++                <CheckBox
++                    android:id="@+id/cbTermsAnsConds"
++                    android:layout_width="wrap_content"
++                    android:layout_height="0dp"
++                    android:layout_weight="1"
++                    android:layout_marginTop="15dp"
++                    android:text="Acepto los término y condiciones"
++                    app:layout_constraintStart_toStartOf="parent"
++                    app:layout_constraintTop_toTopOf="parent" />
++
++            </LinearLayout>
++
++            <Button
++                android:id="@+id/btnSignUp"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="20dp"
++                android:text="Registrarme"
++                android:textAllCaps="true"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toBottomOf="@+id/llGetInfo" />
++
++        </androidx.constraintlayout.widget.ConstraintLayout>
++
++
++
++
++    </RelativeLayout>
++
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalDetailActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalDetailActivity.kt b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalDetailActivity.kt
+new file mode 100644
+--- /dev/null	(date 1723321446849)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalDetailActivity.kt	(date 1723321446849)
+@@ -0,0 +1,21 @@
++package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.componentesgraficos.list
++
++import android.os.Bundle
++import android.widget.TextView
++import androidx.activity.enableEdgeToEdge
++import androidx.appcompat.app.AppCompatActivity
++import androidx.core.view.ViewCompat
++import androidx.core.view.WindowInsetsCompat
++import com.israelaguilar.androidbasic12.R
++
++class AnimalDetailActivity : AppCompatActivity() {
++    override fun onCreate(savedInstanceState: Bundle?) {
++        super.onCreate(savedInstanceState)
++        setContentView(R.layout.activity_animal_detail)
++
++        val tvAnimalName = findViewById<TextView>(R.id.tvAnimalName)
++        val animal = intent.getSerializableExtra("EXTRA_ANIMAL") as AnimalEntity
++
++        tvAnimalName.text = animal.name
++    }
++}
+\ No newline at end of file
+Index: app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalListActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.componentesgraficos.list\n\nimport android.os.Bundle\nimport androidx.activity.enableEdgeToEdge\nimport androidx.appcompat.app.AppCompatActivity\nimport androidx.core.view.ViewCompat\nimport androidx.core.view.WindowInsetsCompat\nimport androidx.recyclerview.widget.GridLayoutManager\nimport androidx.recyclerview.widget.LinearLayoutManager\nimport androidx.recyclerview.widget.RecyclerView\nimport com.israelaguilar.androidbasic12.R\n\nclass AnimalListActivity : AppCompatActivity() {\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_animal_list)\n\n        val list = findViewById<RecyclerView>(R.id.animalList)\n        val data = listOf(AnimalEntity(\"León\", \"Amarillo\", \"\"),\n            AnimalEntity(\"Tigre\", \"Amarillo\", \"\"),\n            AnimalEntity(\"Jirafa\", \"Amarillo\", \"\"),\n            AnimalEntity(\"Armadillo\", \"Amarillo\", \"\"),\n            AnimalEntity(\"Perro\", \"Amarillo\", \"\"),\n            AnimalEntity(\"Gato\", \"Amarillo\", \"\"))\n\n        val adapter = AnimalAdapter(data)\n        list.adapter = adapter\n        list.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)\n        // list.layoutManager = GridLayoutManager(this, 1)\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalListActivity.kt b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalListActivity.kt
+--- a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalListActivity.kt	(revision 3d1ebbb30d7666fd9593af57b4cb41b4b2aabbb0)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalListActivity.kt	(date 1723321446849)
+@@ -1,6 +1,8 @@
+ package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.componentesgraficos.list
+ 
++import android.content.Intent
+ import android.os.Bundle
++import android.widget.Toast
+ import androidx.activity.enableEdgeToEdge
+ import androidx.appcompat.app.AppCompatActivity
+ import androidx.core.view.ViewCompat
+@@ -9,12 +11,14 @@
+ import androidx.recyclerview.widget.LinearLayoutManager
+ import androidx.recyclerview.widget.RecyclerView
+ import com.israelaguilar.androidbasic12.R
++import com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios1.explicitintent.SecondActivity
+ 
+ class AnimalListActivity : AppCompatActivity() {
+     override fun onCreate(savedInstanceState: Bundle?) {
+         super.onCreate(savedInstanceState)
+         setContentView(R.layout.activity_animal_list)
+ 
++        // Colección de datos
+         val list = findViewById<RecyclerView>(R.id.animalList)
+         val data = listOf(AnimalEntity("León", "Amarillo", ""),
+             AnimalEntity("Tigre", "Amarillo", ""),
+@@ -23,7 +27,41 @@
+             AnimalEntity("Perro", "Amarillo", ""),
+             AnimalEntity("Gato", "Amarillo", ""))
+ 
++        // Se crea instancia de Adaptador pasándole la colección de datos
+         val adapter = AnimalAdapter(data)
++
++        adapter.onItemSelected = {animal ->
++            when(animal.name){
++                "Perro" ->{
++                    val detailIntent = Intent(this, SecondActivity::class.java).apply {
++                        putExtra("EXTRA_ANIMAL", animal)
++                    }
++                    startActivity(detailIntent)
++                }
++                else ->{
++                    val detailIntent = Intent(this, AnimalDetailActivity::class.java).apply {
++                        putExtra("EXTRA_ANIMAL", animal)
++                    }
++                    startActivity(detailIntent)
++                }
++
++            }
++
++            /*if(animal.name == "Perro"){
++                val detailIntent = Intent(this, AnimalDetailActivity::class.java).apply {
++                    putExtra("EXTRA_ANIMAL", animal)
++                }
++                startActivity(detailIntent)
++            }else{
++                val detailIntent = Intent(this, AnimalDetailActivity::class.java).apply {
++                    putExtra("EXTRA_ANIMAL", animal)
++                }
++                startActivity(detailIntent)
++            }*/
++
++            // Toast.makeText(this, "Name: ${animal.name}", Toast.LENGTH_LONG).show()
++        }
++
+         list.adapter = adapter
+         list.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+         // list.layoutManager = GridLayoutManager(this, 1)
+Index: app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/viewbinding/ViewBindingExampleActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/viewbinding/ViewBindingExampleActivity.kt b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/viewbinding/ViewBindingExampleActivity.kt
+new file mode 100644
+--- /dev/null	(date 1723321446849)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/viewbinding/ViewBindingExampleActivity.kt	(date 1723321446849)
+@@ -0,0 +1,28 @@
++package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.componentesgraficos.viewbinding
++
++import android.os.Bundle
++import androidx.activity.enableEdgeToEdge
++import androidx.appcompat.app.AppCompatActivity
++import androidx.core.view.ViewCompat
++import androidx.core.view.WindowInsetsCompat
++import com.israelaguilar.androidbasic12.R
++import com.israelaguilar.androidbasic12.databinding.ActivityViewBindingExampleBinding
++
++class ViewBindingExampleActivity : AppCompatActivity() {
++
++    private lateinit var binding: ActivityViewBindingExampleBinding
++
++    override fun onCreate(savedInstanceState: Bundle?) {
++        super.onCreate(savedInstanceState)
++
++        binding = ActivityViewBindingExampleBinding.inflate(layoutInflater)
++        setContentView(binding.root)
++
++        binding.tvFinal.text = "Texto final"
++        binding.tvName.text = "Israel"
++        binding.tvSurname.text = "n/a"
++        binding.tvLastName.text = "Aguilar"
++
++
++    }
++}
+\ No newline at end of file
+Index: app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalEntity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.componentesgraficos.list\n\ndata class AnimalEntity(\n    val name : String,\n    val color : String,\n    val image : String\n)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalEntity.kt b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalEntity.kt
+--- a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalEntity.kt	(revision 3d1ebbb30d7666fd9593af57b4cb41b4b2aabbb0)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/componentesgraficos/list/AnimalEntity.kt	(date 1723321446849)
+@@ -1,7 +1,9 @@
+ package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.componentesgraficos.list
+ 
++import java.io.Serializable
++
+ data class AnimalEntity(
+     val name : String,
+     val color : String,
+     val image : String
+-)
++): Serializable
+Index: app/src/main/java/com/israelaguilar/androidbasic12/tarea/itzel/SingUpActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/tarea/itzel/SingUpActivity.kt b/app/src/main/java/com/israelaguilar/androidbasic12/tarea/itzel/SingUpActivity.kt
+new file mode 100644
+--- /dev/null	(date 1723321446852)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/tarea/itzel/SingUpActivity.kt	(date 1723321446852)
+@@ -0,0 +1,115 @@
++package com.israelaguilar.androidbasic12.tarea.itzel
++
++import android.content.Intent
++import android.os.Bundle
++import android.view.MenuItem
++import android.widget.ArrayAdapter
++import android.widget.Button
++import android.widget.CheckBox
++import android.widget.EditText
++import android.widget.RadioButton
++import android.widget.RadioGroup
++import android.widget.Spinner
++import android.widget.Toast
++import androidx.activity.enableEdgeToEdge
++import androidx.appcompat.app.AppCompatActivity
++import androidx.core.view.ViewCompat
++import androidx.core.view.WindowInsetsCompat
++import com.israelaguilar.androidbasic12.R
++
++class SingUpActivity : AppCompatActivity() {
++
++    override fun onCreate(savedInstanceState: Bundle?) {
++        super.onCreate(savedInstanceState)
++        setContentView(R.layout.activity_sing_up)
++
++        supportActionBar?.setDisplayShowTitleEnabled(false)
++        supportActionBar?.setDisplayHomeAsUpEnabled(true)
++
++        val etName: EditText = findViewById(R.id.etName)
++        val etLName: EditText = findViewById(R.id.etLName)
++        val etEmail: EditText = findViewById(R.id.etEmail)
++        val etPassword: EditText = findViewById(R.id.etPassword)
++        val rgGender: RadioGroup = findViewById(R.id.rgGender)
++        val cbTermsAndConds : CheckBox = findViewById(R.id.cbTermsAnsConds)
++        val spinnerMonth : Spinner = findViewById(R.id.spinnerMonth)
++        val btnSingUp : Button = findViewById((R.id.btnSignUp))
++
++        val spinnerMonthData = findViewById<Spinner>(R.id.spinnerMonth)
++
++        val data = arrayListOf(
++            "Enero",
++            "Febrero",
++            "Marzo",
++            "Abril",
++            "Mayo",
++            "Junio",
++            "Agosto",
++            "Septiembre",
++            "Octubre",
++            "Noviembre",
++            "Diciembre"
++        )
++
++        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, data).also {
++            it.setDropDownViewResource(android.R.layout.simple_spinner_item)
++        }
++        spinnerMonthData.adapter = adapter
++
++        btnSingUp.setOnClickListener {
++            if(validateInfo(etName,etLName,etEmail,etPassword,rgGender,cbTermsAndConds)){
++                val name = etName.text.toString()
++                val lastname = etLName.text.toString()
++                val email = etEmail.text.toString()
++                val password = etPassword.text.toString()
++                val month = spinnerMonth.selectedItem.toString()
++                val gender = findViewById<RadioButton>(rgGender.checkedRadioButtonId)?.text.toString()
++
++
++                val intent = Intent(this, DataDisplayActivity::class.java).apply {
++                    putExtra("USER_NAME", name)
++                    putExtra("USER_LASTNAME", lastname)
++                    putExtra("USER_EMAIL", email)
++                    putExtra("USER_PASSWORD", password)
++                    putExtra("USER_GENDER", gender)
++                    putExtra("USER_MONTH", month)
++
++                }
++                startActivity(intent)
++
++            }else{
++                Toast.makeText(this, "Debe llenar todos los campos antes de continuar", Toast.LENGTH_SHORT).show()
++            }
++        }
++
++
++
++    }
++
++    private fun validateInfo(
++        etName:EditText,
++        etLName:EditText,
++        etEmail:EditText,
++        etPassword:EditText,
++        rgGender:RadioGroup,
++        cbTermsAndConds:CheckBox):
++        Boolean{
++            return etName.text.isNotEmpty() &&
++                    etLName.text.isNotEmpty() &&
++                    etEmail.text.isNotEmpty() &&
++                    etPassword.text.isNotEmpty() &&
++                    rgGender.checkedRadioButtonId != -1 &&
++                    cbTermsAndConds.isChecked
++
++    }
++
++    override fun onOptionsItemSelected(item: MenuItem): Boolean {
++        when (item.itemId) {
++            android.R.id.home -> {
++                onBackPressedDispatcher.onBackPressed()
++            }
++        }
++        return super.onOptionsItemSelected(item)
++    }
++
++}
+\ No newline at end of file
+Index: app/src/main/java/com/israelaguilar/androidbasic12/tarea/itzel/DataDisplayActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/tarea/itzel/DataDisplayActivity.kt b/app/src/main/java/com/israelaguilar/androidbasic12/tarea/itzel/DataDisplayActivity.kt
+new file mode 100644
+--- /dev/null	(date 1723321446852)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/tarea/itzel/DataDisplayActivity.kt	(date 1723321446852)
+@@ -0,0 +1,44 @@
++package com.israelaguilar.androidbasic12.tarea.itzel
++
++import android.os.Bundle
++import android.view.MenuItem
++import android.widget.TextView
++import androidx.activity.enableEdgeToEdge
++import androidx.appcompat.app.AppCompatActivity
++import androidx.core.view.ViewCompat
++import androidx.core.view.WindowInsetsCompat
++import com.israelaguilar.androidbasic12.R
++
++class DataDisplayActivity : AppCompatActivity() {
++    override fun onCreate(savedInstanceState: Bundle?) {
++        super.onCreate(savedInstanceState)
++        supportActionBar?.setDisplayShowTitleEnabled(false)
++        supportActionBar?.setDisplayHomeAsUpEnabled(true)
++        setContentView(R.layout.activity_data_display)
++
++
++        val name = intent.getStringExtra("USER_NAME")
++        val lastname = intent.getStringExtra("USER_LASTNAME")
++        val email = intent.getStringExtra("USER_EMAIL")
++        val password = intent.getStringExtra("USER_PASSWORD")
++        val gender = intent.getStringExtra("USER_GENDER")
++        val month = intent.getStringExtra("USER_MONTH")
++
++        findViewById<TextView>(R.id.tvNameOut).text = "Nombre: $name"
++        findViewById<TextView>(R.id.tvLNameOut).text = "Apellido: $lastname"
++        findViewById<TextView>(R.id.tvEmailOut).text = "$email"
++        findViewById<TextView>(R.id.tvPasswordOut).text = "$password"
++        findViewById<TextView>(R.id.tvGenderOut).text = "Sexo: $gender"
++        findViewById<TextView>(R.id.tvMonthOut).text = "Mes de nacimiento: $month"
++    }
++
++    override fun onOptionsItemSelected(item: MenuItem): Boolean {
++        when (item.itemId) {
++            android.R.id.home -> {
++                onBackPressedDispatcher.onBackPressed()
++            }
++        }
++        return super.onOptionsItemSelected(item)
++    }
++
++}
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_receive_params.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_receive_params.xml b/app/src/main/res/layout/fragment_receive_params.xml
+new file mode 100644
+--- /dev/null	(date 1723321446861)
++++ b/app/src/main/res/layout/fragment_receive_params.xml	(date 1723321446861)
+@@ -0,0 +1,15 @@
++<?xml version="1.0" encoding="utf-8"?>
++<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".ejerciciosclase.ejercicios2.fragment.params.ReceiveParamsFragment">
++
++    <!-- TODO: Update blank fragment layout -->
++    <TextView
++        android:id="@+id/tvInfo"
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:text="@string/hello_blank_fragment" />
++
++</FrameLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_first_view_binding.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_first_view_binding.xml b/app/src/main/res/layout/fragment_first_view_binding.xml
+new file mode 100644
+--- /dev/null	(date 1723321446861)
++++ b/app/src/main/res/layout/fragment_first_view_binding.xml	(date 1723321446861)
+@@ -0,0 +1,16 @@
++<?xml version="1.0" encoding="utf-8"?>
++<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="@color/yellow"
++    tools:context=".ejerciciosclase.ejercicios2.fragment.FirstViewBindingFragment">
++
++    <!-- TODO: Update blank fragment layout -->
++    <Button
++        android:id="@+id/btnText"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:text="Cargar second fragment" />
++
++</FrameLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_first.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_first.xml b/app/src/main/res/layout/fragment_first.xml
+new file mode 100644
+--- /dev/null	(date 1723321446861)
++++ b/app/src/main/res/layout/fragment_first.xml	(date 1723321446861)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="utf-8"?>
++<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".ejerciciosclase.ejercicios2.fragment.FirstFragment">
++
++    <!-- TODO: Update blank fragment layout -->
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:text="@string/hello_blank_fragment" />
++
++</FrameLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_animal_detail.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_animal_detail.xml b/app/src/main/res/layout/activity_animal_detail.xml
+new file mode 100644
+--- /dev/null	(date 1723321446859)
++++ b/app/src/main/res/layout/activity_animal_detail.xml	(date 1723321446859)
+@@ -0,0 +1,17 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:id="@+id/main"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".ejerciciosclase.ejercicios2.componentesgraficos.list.AnimalDetailActivity">
++
++    <TextView
++        android:id="@+id/tvAnimalName"
++        android:layout_marginTop="30dp"
++        app:layout_constraintTop_toTopOf="parent"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content" />
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_send_params.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_send_params.xml b/app/src/main/res/layout/fragment_send_params.xml
+new file mode 100644
+--- /dev/null	(date 1723321446862)
++++ b/app/src/main/res/layout/fragment_send_params.xml	(date 1723321446862)
+@@ -0,0 +1,28 @@
++<?xml version="1.0" encoding="utf-8"?>
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:orientation="vertical"
++    tools:context=".ejerciciosclase.ejercicios2.fragment.params.SendParamsFragment">
++
++    <EditText
++        android:id="@+id/etName"
++        android:hint="Ingresa tu nombre"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content" />
++
++    <EditText
++        android:id="@+id/etAge"
++        android:inputType="number"
++        android:hint="Ingresa tu edad"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content" />
++
++    <Button
++        android:id="@+id/btnSendParams"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:text="Send Params" />
++
++</LinearLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_data_display.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_data_display.xml b/app/src/main/res/layout/activity_data_display.xml
+new file mode 100644
+--- /dev/null	(date 1723321446860)
++++ b/app/src/main/res/layout/activity_data_display.xml	(date 1723321446860)
+@@ -0,0 +1,128 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:id="@+id/main"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".tarea.itzel.DataDisplayActivity">
++
++    <RelativeLayout
++        android:layout_width="match_parent"
++        android:layout_height="match_parent">
++
++
++        <androidx.constraintlayout.widget.ConstraintLayout
++            android:layout_width="match_parent"
++            android:layout_height="match_parent"
++            android:layout_centerInParent="true">
++
++            <TextView
++                android:id="@+id/tvCrtAccnt"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:background="@android:color/holo_green_dark"
++                android:paddingHorizontal="30dp"
++                android:paddingTop="20dp"
++                android:paddingBottom="15dp"
++                android:text="Registro Exitoso"
++                android:textColor="@android:color/white"
++                android:textSize="25dp"
++                android:layout_marginBottom="70dp"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintBottom_toTopOf="@id/llGetInfo" />
++
++            <LinearLayout
++                android:id="@+id/llGetInfo"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="10dp"
++                android:orientation="vertical"
++                app:layout_constraintBottom_toBottomOf="parent"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toTopOf="parent">
++
++
++                <TextView
++                    android:id="@+id/tvNameOut"
++                    android:text="Nombre:"
++                    android:textSize="15dp"
++                    android:layout_marginTop="15dp"
++                    android:layout_width="300dp"
++                    android:layout_height="0dp"
++                    android:layout_weight="1"/>
++
++                <TextView
++                    android:id="@+id/tvLNameOut"
++                    android:text="Apellido:"
++                    android:textSize="15dp"
++                    android:layout_marginTop="15dp"
++                    android:layout_width="300dp"
++                    android:layout_height="0dp"
++                    android:layout_weight="1"/>
++
++                <TextView
++                    android:id="@+id/tvGenderOut"
++                    android:text="Género:"
++                    android:textSize="15dp"
++                    android:layout_marginTop="15dp"
++                    android:layout_width="300dp"
++                    android:layout_height="0dp"
++                    android:layout_weight="1"/>
++
++                <TextView
++                    android:id="@+id/tvMonthOut"
++                    android:text="Mes de nacimiento:"
++                    android:textSize="15dp"
++                    android:layout_marginTop="15dp"
++                    android:layout_width="300dp"
++                    android:layout_height="0dp"
++                    android:layout_weight="1"/>
++
++                <TextView
++                    android:text="Su Usuario y contraseña son:"
++                    android:textSize="15dp"
++                    android:layout_marginTop="50dp"
++                    android:layout_width="300dp"
++                    android:layout_height="0dp"
++                    android:layout_weight="1"/>
++
++                <TextView
++                    android:id="@+id/tvEmailOut"
++                    android:text=" "
++                    android:textSize="15dp"
++                    android:layout_marginTop="15dp"
++                    android:layout_width="300dp"
++                    android:layout_height="0dp"
++                    android:layout_weight="1"/>
++
++                <TextView
++                    android:id="@+id/tvPasswordOut"
++                    android:text=" "
++                    android:textSize="15dp"
++                    android:layout_marginTop="15dp"
++                    android:layout_width="300dp"
++                    android:layout_height="0dp"
++                    android:layout_weight="1"/>
++
++
++
++
++
++
++
++            </LinearLayout>
++
++
++
++        </androidx.constraintlayout.widget.ConstraintLayout>
++
++
++
++
++    </RelativeLayout>
++
++
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/israelaguilar/androidbasic12/tarea/israel/UserDataActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.israelaguilar.androidbasic12.tarea.israel\n\nimport android.os.Bundle\nimport android.view.MenuItem\nimport android.widget.TextView\nimport androidx.activity.enableEdgeToEdge\nimport androidx.appcompat.app.AppCompatActivity\nimport androidx.core.view.ViewCompat\nimport androidx.core.view.WindowInsetsCompat\nimport com.israelaguilar.androidbasic12.R\n\nclass UserDataActivity : AppCompatActivity() {\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_user_data)\n\n        supportActionBar?.setDisplayShowTitleEnabled(false)\n        supportActionBar?.setDisplayHomeAsUpEnabled(true)\n\n        // Obtener los datos del intent\n        val userName = intent.getStringExtra(\"USER_NAME\")\n        val userLastName = intent.getStringExtra(\"USER_LASTNAME\")\n        val userTitle = intent.getStringExtra(\"USER_TITLE\")\n        val userEmail = intent.getStringExtra(\"USER_EMAIL\")\n        val userSex = intent.getStringExtra(\"USER_SEX\")\n        val userPassword = intent.getStringExtra(\"USER_PASSWORD\")\n        // Mostrar datos en interfaz\n        findViewById<TextView>(R.id.tvUserName).text = \"Nombre: $userName\"\n        findViewById<TextView>(R.id.tvUserLastName).text = \"Apellido: $userLastName\"\n        findViewById<TextView>(R.id.tvUserTitle).text = \"Título: $userTitle\"\n        findViewById<TextView>(R.id.tvUserEmail).text = \"Correo electrónico: $userEmail\"\n        findViewById<TextView>(R.id.tvUserPassword).text = \"Contraseña: $userPassword\"\n        findViewById<TextView>(R.id.tvUserSex).text = \"Sexo: $userSex\"\n\n    }\n\n    override fun onOptionsItemSelected(item: MenuItem): Boolean {\n        when (item.itemId) {\n            android.R.id.home -> {\n                onBackPressedDispatcher.onBackPressed()\n            }\n        }\n        return super.onOptionsItemSelected(item)\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/tarea/israel/UserDataActivity.kt b/app/src/main/java/com/israelaguilar/androidbasic12/tarea/israel/UserDataActivity.kt
+--- a/app/src/main/java/com/israelaguilar/androidbasic12/tarea/israel/UserDataActivity.kt	(revision 3d1ebbb30d7666fd9593af57b4cb41b4b2aabbb0)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/tarea/israel/UserDataActivity.kt	(date 1723321446852)
+@@ -24,6 +24,7 @@
+         val userEmail = intent.getStringExtra("USER_EMAIL")
+         val userSex = intent.getStringExtra("USER_SEX")
+         val userPassword = intent.getStringExtra("USER_PASSWORD")
++
+         // Mostrar datos en interfaz
+         findViewById<TextView>(R.id.tvUserName).text = "Nombre: $userName"
+         findViewById<TextView>(R.id.tvUserLastName).text = "Apellido: $userLastName"
+Index: app/src/main/res/layout/fragment_second.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_second.xml b/app/src/main/res/layout/fragment_second.xml
+new file mode 100644
+--- /dev/null	(date 1723321446862)
++++ b/app/src/main/res/layout/fragment_second.xml	(date 1723321446862)
+@@ -0,0 +1,15 @@
++<?xml version="1.0" encoding="utf-8"?>
++<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="@color/red"
++    tools:context=".ejerciciosclase.ejercicios2.fragment.SecondFragment">
++
++    <!-- TODO: Update blank fragment layout -->
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:text="@string/hello_blank_fragment" />
++
++</FrameLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_fragment.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_fragment.xml b/app/src/main/res/layout/activity_fragment.xml
+new file mode 100644
+--- /dev/null	(date 1723321446860)
++++ b/app/src/main/res/layout/activity_fragment.xml	(date 1723321446860)
+@@ -0,0 +1,23 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:id="@+id/main"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".ejerciciosclase.ejercicios2.fragment.FragmentActivity">
++
++    <androidx.fragment.app.FragmentContainerView
++        android:id="@+id/fragment"
++        app:layout_constraintTop_toTopOf="parent"
++        android:layout_width="match_parent"
++        android:layout_height="400dp" />
++
++  <!--  <androidx.fragment.app.FragmentContainerView
++        android:id="@+id/fragment2"
++        android:name="com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.fragment.FirstViewBindingFragment"
++        app:layout_constraintBottom_toBottomOf="parent"
++        android:layout_width="match_parent"
++        android:layout_height="200dp" />-->
++    
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/item_animal.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"wrap_content\">\n\n    <androidx.cardview.widget.CardView\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        app:cardCornerRadius=\"15dp\"\n        app:cardElevation=\"5dp\"\n        app:cardUseCompatPadding=\"true\"\n        app:layout_constraintTop_toTopOf=\"parent\">\n\n        <androidx.constraintlayout.widget.ConstraintLayout\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"match_parent\">\n\n            <ImageView\n                android:id=\"@+id/ivAnimal\"\n                android:layout_width=\"100dp\"\n                android:layout_height=\"100dp\"\n                android:src=\"@mipmap/ic_launcher_round\"\n                app:layout_constraintStart_toStartOf=\"parent\"\n                app:layout_constraintTop_toTopOf=\"parent\" />\n\n            <TextView\n                android:id=\"@+id/tvAnimal\"\n                android:layout_width=\"0dp\"\n                android:layout_height=\"wrap_content\"\n                android:maxLines=\"2\"\n                android:paddingHorizontal=\"10dp\"\n                android:text=\"Nombre de animal\"\n                app:layout_constraintBottom_toBottomOf=\"parent\"\n                app:layout_constraintEnd_toEndOf=\"parent\"\n                app:layout_constraintStart_toEndOf=\"@+id/ivAnimal\"\n                app:layout_constraintTop_toTopOf=\"parent\" />\n\n            <TextView\n                android:id=\"@+id/tvColor\"\n                app:layout_constraintTop_toBottomOf=\"@+id/tvAnimal\"\n                app:layout_constraintStart_toEndOf=\"@+id/ivAnimal\"\n                android:layout_marginTop=\"5dp\"\n                app:layout_constraintEnd_toEndOf=\"parent\"\n                android:layout_width=\"0dp\"\n                android:layout_height=\"wrap_content\" />\n\n        </androidx.constraintlayout.widget.ConstraintLayout>\n\n    </androidx.cardview.widget.CardView>\n\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/item_animal.xml b/app/src/main/res/layout/item_animal.xml
+--- a/app/src/main/res/layout/item_animal.xml	(revision 3d1ebbb30d7666fd9593af57b4cb41b4b2aabbb0)
++++ b/app/src/main/res/layout/item_animal.xml	(date 1723321446862)
+@@ -5,6 +5,7 @@
+     android:layout_height="wrap_content">
+ 
+     <androidx.cardview.widget.CardView
++        android:id="@+id/animalCard"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:cardCornerRadius="15dp"
+@@ -20,7 +21,8 @@
+                 android:id="@+id/ivAnimal"
+                 android:layout_width="100dp"
+                 android:layout_height="100dp"
+-                android:src="@mipmap/ic_launcher_round"
++                android:scaleType="centerCrop"
++                android:src="@drawable/img_android"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintTop_toTopOf="parent" />
+ 
+@@ -29,6 +31,7 @@
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:maxLines="2"
++                style="@style/RedTextStyle"
+                 android:paddingHorizontal="10dp"
+                 android:text="Nombre de animal"
+                 app:layout_constraintBottom_toBottomOf="parent"
+@@ -40,6 +43,8 @@
+                 android:id="@+id/tvColor"
+                 app:layout_constraintTop_toBottomOf="@+id/tvAnimal"
+                 app:layout_constraintStart_toEndOf="@+id/ivAnimal"
++                style="@style/YellowTextStyle"
++                android:text="@string/label_close"
+                 android:layout_marginTop="5dp"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 android:layout_width="0dp"
+Index: app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios1/LifeCycleActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios1\n\nimport android.os.Bundle\nimport android.util.Log\nimport android.widget.Toast\nimport androidx.activity.enableEdgeToEdge\nimport androidx.appcompat.app.AppCompatActivity\nimport androidx.core.view.ViewCompat\nimport androidx.core.view.WindowInsetsCompat\nimport com.israelaguilar.androidbasic12.R\n\nclass LifeCycleActivity : AppCompatActivity() {\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        enableEdgeToEdge()\n        setContentView(R.layout.activity_main)\n        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->\n            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())\n            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)\n            insets\n        }\n        Log.e(\"LifeCycle\",\"onCreate\")\n        Toast.makeText(this, \"onCreate\", Toast.LENGTH_LONG).show()\n\n    }\n\n    override fun onStart() {\n        super.onStart()\n        Log.e(\"LifeCycle\", \"onStart\")\n        Toast.makeText(this, \"onStart\", Toast.LENGTH_LONG).show()\n    }\n\n    override fun onResume() {\n        super.onResume()\n        Log.e(\"LifeCycle\",\"onResume\")\n        Toast.makeText(this, \"onResume\", Toast.LENGTH_LONG).show()\n    }\n\n    override fun onPause() {\n        super.onPause()\n        Log.e(\"LifeCycle\",\"onPause\")\n        Toast.makeText(this, \"onPause\", Toast.LENGTH_LONG).show()\n    }\n\n    override fun onStop() {\n        super.onStop()\n        Log.e( \"LifeCycle\",\"onStop\")\n        Toast.makeText(this, \"onStop\", Toast.LENGTH_LONG).show()\n    }\n\n    override fun onDestroy() {\n        super.onDestroy()\n        Log.e(\"LifeCycle\",\"onDestroy\")\n        Toast.makeText(this, \"onDestroy\", Toast.LENGTH_LONG).show()\n    }\n\n    override fun onRestart() {\n        super.onRestart()\n        Log.e(\"LifeCycle\",\"onRestart\")\n        Toast.makeText(this, \"onRestart\", Toast.LENGTH_LONG).show()\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios1/LifeCycleActivity.kt b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios1/LifeCycleActivity.kt
+--- a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios1/LifeCycleActivity.kt	(revision 3d1ebbb30d7666fd9593af57b4cb41b4b2aabbb0)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios1/LifeCycleActivity.kt	(date 1723321446847)
+@@ -8,17 +8,19 @@
+ import androidx.core.view.ViewCompat
+ import androidx.core.view.WindowInsetsCompat
+ import com.israelaguilar.androidbasic12.R
++import com.israelaguilar.androidbasic12.databinding.ActivityMainBinding
+ 
+ class LifeCycleActivity : AppCompatActivity() {
++
++    private lateinit var binding : ActivityMainBinding
++
+     override fun onCreate(savedInstanceState: Bundle?) {
+         super.onCreate(savedInstanceState)
+-        enableEdgeToEdge()
+-        setContentView(R.layout.activity_main)
+-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+-            insets
+-        }
++
++        binding = ActivityMainBinding.inflate(layoutInflater)
++        setContentView(binding.root)
++
++
+         Log.e("LifeCycle","onCreate")
+         Toast.makeText(this, "onCreate", Toast.LENGTH_LONG).show()
+ 
+Index: app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios1/ImplicitIntentActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios1\n\nimport android.content.Intent\nimport android.net.Uri\nimport android.os.Bundle\nimport android.widget.Button\nimport androidx.appcompat.app.AppCompatActivity\nimport com.israelaguilar.androidbasic12.R\n\nclass ImplicitIntentActivity : AppCompatActivity() {\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_implicit_intent)\n\n        val btnSend = findViewById<Button>(R.id.btnSend)\n        val btnSendUrl = findViewById<Button>(R.id.btnSendUrl)\n\n        btnSend.setOnClickListener {\n            val emailIntent = Intent(Intent.ACTION_SENDTO).apply {\n                data = Uri.parse(\"mailto:\")\n                putExtra(Intent.EXTRA_SUBJECT, \"Aviso Urgente\")\n                putExtra(Intent.EXTRA_TEXT, \"Este es un menssaje prueba de email.\")\n            }\n            startActivity(Intent.createChooser(emailIntent, \"Enviar email usando:\"))\n        }\n\n        btnSendUrl.setOnClickListener {\n            val urlIntent = Intent(Intent.ACTION_VIEW, Uri.parse(\"http://www.google.com\"))\n            startActivity(Intent.createChooser(urlIntent, \"Abrir usando: \"))\n\n        }\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios1/ImplicitIntentActivity.kt b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios1/ImplicitIntentActivity.kt
+--- a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios1/ImplicitIntentActivity.kt	(revision 3d1ebbb30d7666fd9593af57b4cb41b4b2aabbb0)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios1/ImplicitIntentActivity.kt	(date 1723321446847)
+@@ -12,6 +12,7 @@
+         super.onCreate(savedInstanceState)
+         setContentView(R.layout.activity_implicit_intent)
+ 
++        // Se generan instancias de botones
+         val btnSend = findViewById<Button>(R.id.btnSend)
+         val btnSendUrl = findViewById<Button>(R.id.btnSendUrl)
+ 
+Index: app/src/main/res/drawable/ic_people.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/ic_people.xml b/app/src/main/res/drawable/ic_people.xml
+new file mode 100644
+--- /dev/null	(date 1723321446857)
++++ b/app/src/main/res/drawable/ic_people.xml	(date 1723321446857)
+@@ -0,0 +1,10 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="110dp"
++    android:height="110dp"
++    android:viewportWidth="110"
++    android:viewportHeight="110">
++  <path
++      android:pathData="M77.15,58.06c-5.5,0 -14.07,1.56 -20.63,4.58 -6.55,-3.07 -15.13,-4.58 -20.63,-4.58 -9.95,0 -29.79,4.95 -29.79,14.9v12.6h100.83L106.94,72.95c0,-9.94 -19.84,-14.9 -29.79,-14.9zM58.82,78.68L12.99,78.68v-5.73c0,-2.47 11.73,-8.02 22.92,-8.02 11.18,0 22.92,5.55 22.92,8.02v5.73zM100.07,78.68L65.69,78.68v-5.73c0,-2.11 -0.92,-3.94 -2.38,-5.59 4.03,-1.38 8.98,-2.43 13.84,-2.43 11.18,0 22.92,5.55 22.92,8.02v5.73zM35.9,53.47c8.85,0 16.04,-7.2 16.04,-16.04 0,-8.85 -7.2,-16.04 -16.04,-16.04S19.86,28.58 19.86,37.43c0,8.85 7.2,16.04 16.04,16.04zM35.9,28.26c5.04,0 9.17,4.13 9.17,9.17 0,5.04 -4.13,9.17 -9.17,9.17 -5.04,0 -9.17,-4.13 -9.17,-9.17 0,-5.04 4.13,-9.17 9.17,-9.17zM77.15,53.47c8.85,0 16.04,-7.2 16.04,-16.04 0,-8.85 -7.2,-16.04 -16.04,-16.04S61.11,28.58 61.11,37.43c0,8.85 7.2,16.04 16.04,16.04zM77.15,28.26c5.04,0 9.17,4.13 9.17,9.17 0,5.04 -4.13,9.17 -9.17,9.17 -5.04,0 -9.17,-4.13 -9.17,-9.17 0,-5.04 4.13,-9.17 9.17,-9.17z"
++      android:fillColor="#002747"
++      android:fillType="nonZero"/>
++</vector>
+Index: app/src/main/res/drawable/ic_delete.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/ic_delete.xml b/app/src/main/res/drawable/ic_delete.xml
+new file mode 100644
+--- /dev/null	(date 1723321446856)
++++ b/app/src/main/res/drawable/ic_delete.xml	(date 1723321446856)
+@@ -0,0 +1,5 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:tint="#1B5397" android:viewportHeight="24" android:viewportWidth="24" android:width="24dp">
++      
++    <path android:fillColor="@android:color/white" android:pathData="M6,19c0,1.1 0.9,2 2,2h8c1.1,0 2,-0.9 2,-2V7H6v12zM19,4h-3.5l-1,-1h-5l-1,1H5v2h14V4z"/>
++    
++</vector>
+Index: app/build.gradle.kts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\n    alias(libs.plugins.android.application)\n    alias(libs.plugins.jetbrains.kotlin.android)\n}\n\nandroid {\n    namespace = \"com.israelaguilar.androidbasic12\"\n    compileSdk = 34\n\n    defaultConfig {\n        applicationId = \"com.israelaguilar.androidbasic12\"\n        minSdk = 21\n        targetSdk = 34\n        versionCode = 1\n        versionName = \"1.0\"\n\n        testInstrumentationRunner = \"androidx.test.runner.AndroidJUnitRunner\"\n    }\n\n    buildTypes {\n        release {\n            isMinifyEnabled = false\n            proguardFiles(\n                getDefaultProguardFile(\"proguard-android-optimize.txt\"),\n                \"proguard-rules.pro\"\n            )\n        }\n    }\n    compileOptions {\n        sourceCompatibility = JavaVersion.VERSION_1_8\n        targetCompatibility = JavaVersion.VERSION_1_8\n    }\n    kotlinOptions {\n        jvmTarget = \"1.8\"\n    }\n}\n\ndependencies {\n\n    implementation(libs.androidx.core.ktx)\n    implementation(libs.androidx.appcompat)\n    implementation(libs.material)\n    implementation(libs.androidx.activity)\n    implementation(libs.androidx.constraintlayout)\n    testImplementation(libs.junit)\n    androidTestImplementation(libs.androidx.junit)\n    androidTestImplementation(libs.androidx.espresso.core)\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build.gradle.kts b/app/build.gradle.kts
+--- a/app/build.gradle.kts	(revision 3d1ebbb30d7666fd9593af57b4cb41b4b2aabbb0)
++++ b/app/build.gradle.kts	(date 1723321446846)
+@@ -33,10 +33,15 @@
+     kotlinOptions {
+         jvmTarget = "1.8"
+     }
++
++    buildFeatures {
++        viewBinding = true
++    }
+ }
+ 
+ dependencies {
+ 
++    implementation(libs.picasso)
+     implementation(libs.androidx.core.ktx)
+     implementation(libs.androidx.appcompat)
+     implementation(libs.material)
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_17\" default=\"true\" project-jdk-name=\"jbr-17\" project-jdk-type=\"JavaSDK\">\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\n  </component>\n  <component name=\"ProjectType\">\n    <option name=\"id\" value=\"Android\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 3d1ebbb30d7666fd9593af57b4cb41b4b2aabbb0)
++++ b/.idea/misc.xml	(date 1723321446846)
+@@ -1,4 +1,3 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ExternalStorageConfigurationManager" enabled="true" />
+   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+Index: app/src/main/res/values-es/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values-es/strings.xml b/app/src/main/res/values-es/strings.xml
+new file mode 100644
+--- /dev/null	(date 1723321446862)
++++ b/app/src/main/res/values-es/strings.xml	(date 1723321446862)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <string name="app_name">AndroidBásico12</string>
++    <string name="label_continue">Continuar</string>
++    <string name="label_cancel">Cancelar</string>
++    <string name="label_close">Cerrar</string>
++</resources>
+\ No newline at end of file
+Index: app/src/main/res/drawable/ic_verified_user.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/ic_verified_user.xml b/app/src/main/res/drawable/ic_verified_user.xml
+new file mode 100644
+--- /dev/null	(date 1723321446857)
++++ b/app/src/main/res/drawable/ic_verified_user.xml	(date 1723321446857)
+@@ -0,0 +1,5 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:tint="#1B5397" android:viewportHeight="24" android:viewportWidth="24" android:width="24dp">
++      
++    <path android:fillColor="@android:color/white" android:pathData="M12,1L3,5v6c0,5.55 3.84,10.74 9,12 5.16,-1.26 9,-6.45 9,-12L21,5l-9,-4zM10,17l-4,-4 1.41,-1.41L10,14.17l6.59,-6.59L18,9l-8,8z"/>
++    
++</vector>
+Index: .idea/deploymentTargetSelector.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"deploymentTargetSelector\">\n    <selectionStates>\n      <SelectionState runConfigName=\"app\">\n        <option name=\"selectionMode\" value=\"DROPDOWN\" />\n      </SelectionState>\n      <SelectionState runConfigName=\"ThirdActivity\">\n        <option name=\"selectionMode\" value=\"DROPDOWN\" />\n      </SelectionState>\n    </selectionStates>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/deploymentTargetSelector.xml b/.idea/deploymentTargetSelector.xml
+--- a/.idea/deploymentTargetSelector.xml	(revision 3d1ebbb30d7666fd9593af57b4cb41b4b2aabbb0)
++++ b/.idea/deploymentTargetSelector.xml	(date 1723321446846)
+@@ -2,10 +2,7 @@
+ <project version="4">
+   <component name="deploymentTargetSelector">
+     <selectionStates>
+-      <SelectionState runConfigName="app">
+-        <option name="selectionMode" value="DROPDOWN" />
+-      </SelectionState>
+-      <SelectionState runConfigName="ThirdActivity">
++      <SelectionState runConfigName="MenuActivity">
+         <option name="selectionMode" value="DROPDOWN" />
+       </SelectionState>
+     </selectionStates>
+Index: gradle/libs.versions.toml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>[versions]\nagp = \"8.5.1\"\nkotlin = \"1.9.0\"\ncoreKtx = \"1.13.1\"\njunit = \"4.13.2\"\njunitVersion = \"1.2.1\"\nespressoCore = \"3.6.1\"\nappcompat = \"1.7.0\"\nmaterial = \"1.12.0\"\nactivity = \"1.9.1\"\nconstraintlayout = \"2.1.4\"\n\n[libraries]\nandroidx-core-ktx = { group = \"androidx.core\", name = \"core-ktx\", version.ref = \"coreKtx\" }\njunit = { group = \"junit\", name = \"junit\", version.ref = \"junit\" }\nandroidx-junit = { group = \"androidx.test.ext\", name = \"junit\", version.ref = \"junitVersion\" }\nandroidx-espresso-core = { group = \"androidx.test.espresso\", name = \"espresso-core\", version.ref = \"espressoCore\" }\nandroidx-appcompat = { group = \"androidx.appcompat\", name = \"appcompat\", version.ref = \"appcompat\" }\nmaterial = { group = \"com.google.android.material\", name = \"material\", version.ref = \"material\" }\nandroidx-activity = { group = \"androidx.activity\", name = \"activity\", version.ref = \"activity\" }\nandroidx-constraintlayout = { group = \"androidx.constraintlayout\", name = \"constraintlayout\", version.ref = \"constraintlayout\" }\n\n[plugins]\nandroid-application = { id = \"com.android.application\", version.ref = \"agp\" }\njetbrains-kotlin-android = { id = \"org.jetbrains.kotlin.android\", version.ref = \"kotlin\" }\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/gradle/libs.versions.toml b/gradle/libs.versions.toml
+--- a/gradle/libs.versions.toml	(revision 3d1ebbb30d7666fd9593af57b4cb41b4b2aabbb0)
++++ b/gradle/libs.versions.toml	(date 1723321446864)
+@@ -9,6 +9,7 @@
+ material = "1.12.0"
+ activity = "1.9.1"
+ constraintlayout = "2.1.4"
++picassoVersion = "2.8"
+ 
+ [libraries]
+ androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+@@ -19,8 +20,8 @@
+ material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+ androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
++picasso = { group = "com.squareup.picasso", name = "picasso", version.ref = "picassoVersion" }
+ 
+ [plugins]
+ android-application = { id = "com.android.application", version.ref = "agp" }
+-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+-
++jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+\ No newline at end of file
+Index: app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/params/SendParamsFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/params/SendParamsFragment.kt b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/params/SendParamsFragment.kt
+new file mode 100644
+--- /dev/null	(date 1723321446852)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/params/SendParamsFragment.kt	(date 1723321446852)
+@@ -0,0 +1,59 @@
++package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.fragment.params
++
++import android.content.Intent
++import android.os.Bundle
++import androidx.fragment.app.Fragment
++import android.view.LayoutInflater
++import android.view.View
++import android.view.ViewGroup
++import androidx.appcompat.app.AppCompatActivity
++import com.israelaguilar.androidbasic12.R
++import com.israelaguilar.androidbasic12.databinding.FragmentSendParamsBinding
++import com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios1.explicitintent.HomeActivity
++import com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.fragment.SecondFragment
++
++
++class SendParamsFragment : Fragment() {
++
++    private lateinit var binding : FragmentSendParamsBinding
++
++    override fun onCreateView(
++        inflater: LayoutInflater, container: ViewGroup?,
++        savedInstanceState: Bundle?
++    ): View? {
++        // Inflate the layout for this fragment
++        binding = FragmentSendParamsBinding.inflate(inflater, container, false)
++        return binding.root
++    }
++
++    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
++        super.onViewCreated(view, savedInstanceState)
++
++        setHasOptionsMenu(true)
++        (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(false)
++
++        binding.btnSendParams.setOnClickListener {
++
++            val name = binding.etName.text.toString()
++            val age = binding.etAge.text.toString()
++
++            if(name.isNotEmpty()){
++                parentFragmentManager.beginTransaction()
++                    .replace(R.id.fragmentParams, ReceiveParamsFragment.newInstance(name, age.toInt()+0))
++                    .addToBackStack("ReceiveParamsFragment")
++                    .commit()
++            }
++
++            // Mandando a llamar a otra activity con un intent
++            /*val intent = Intent(requireActivity(), HomeActivity::class.java)
++            startActivity(intent)*/
++
++        }
++    }
++
++    companion object {
++
++        @JvmStatic
++        fun newInstance() = SendParamsFragment()
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/values/colors.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<resources>\n    <color name=\"black\">#FF000000</color>\n    <color name=\"white\">#FFFFFFFF</color>\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/colors.xml b/app/src/main/res/values/colors.xml
+--- a/app/src/main/res/values/colors.xml	(revision 3d1ebbb30d7666fd9593af57b4cb41b4b2aabbb0)
++++ b/app/src/main/res/values/colors.xml	(date 1723321446863)
+@@ -2,4 +2,7 @@
+ <resources>
+     <color name="black">#FF000000</color>
+     <color name="white">#FFFFFFFF</color>
++    <color name="blue">#0D32A3</color>
++    <color name="yellow">#F4C536</color>
++    <color name="red">#FFF44336</color>
+ </resources>
+\ No newline at end of file
+Index: app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/params/ReceiveParamsFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/params/ReceiveParamsFragment.kt b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/params/ReceiveParamsFragment.kt
+new file mode 100644
+--- /dev/null	(date 1723321446851)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/params/ReceiveParamsFragment.kt	(date 1723321446851)
+@@ -0,0 +1,68 @@
++package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.fragment.params
++
++import android.os.Bundle
++import androidx.fragment.app.Fragment
++import android.view.LayoutInflater
++import android.view.MenuItem
++import android.view.View
++import android.view.ViewGroup
++import androidx.appcompat.app.AppCompatActivity
++import com.israelaguilar.androidbasic12.R
++import com.israelaguilar.androidbasic12.databinding.FragmentReceiveParamsBinding
++
++
++class ReceiveParamsFragment : Fragment() {
++
++    private lateinit var binding : FragmentReceiveParamsBinding
++    private var name : String? = ""
++    private var age : Int? = 0
++
++    override fun onCreate(savedInstanceState: Bundle?) {
++        super.onCreate(savedInstanceState)
++
++        arguments?.let {
++            name = it.getString("ARG_NAME")
++            age = it.getInt("ARG_AGE")
++        }
++    }
++
++    override fun onCreateView(
++        inflater: LayoutInflater, container: ViewGroup?,
++        savedInstanceState: Bundle?
++    ): View? {
++        // Inflate the layout for this fragment
++        binding = FragmentReceiveParamsBinding.inflate(inflater, container, false)
++        return binding.root
++    }
++
++    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
++        super.onViewCreated(view, savedInstanceState)
++
++        setHasOptionsMenu(true)
++        (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
++
++
++        binding.tvInfo.text = "Name = $name, Age = $age"
++
++    }
++
++    override fun onOptionsItemSelected(item: MenuItem): Boolean {
++        when(item.itemId){
++            android.R.id.home -> {
++                requireActivity().onBackPressedDispatcher.onBackPressed()
++                //Toast.makeText(this, "Click in back", Toast.LENGTH_SHORT).show()
++            }
++        }
++        return super.onOptionsItemSelected(item)
++    }
++
++    companion object {
++        @JvmStatic
++        fun newInstance(name:String, age:Int) = ReceiveParamsFragment().apply {
++            arguments = Bundle().apply {
++                putString("ARG_NAME", name)
++                putInt("ARG_AGE", age)
++            }
++        }
++    }
++}
+\ No newline at end of file
+Index: app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/SecondFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/SecondFragment.kt b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/SecondFragment.kt
+new file mode 100644
+--- /dev/null	(date 1723321446851)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/SecondFragment.kt	(date 1723321446851)
+@@ -0,0 +1,35 @@
++package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.fragment
++
++import android.os.Bundle
++import androidx.fragment.app.Fragment
++import android.view.LayoutInflater
++import android.view.View
++import android.view.ViewGroup
++import com.israelaguilar.androidbasic12.R
++import com.israelaguilar.androidbasic12.databinding.FragmentSecondBinding
++
++/**
++ * A simple [Fragment] subclass.
++ * Use the [SecondFragment.newInstance] factory method to
++ * create an instance of this fragment.
++ */
++class SecondFragment : Fragment() {
++
++    private lateinit var binding : FragmentSecondBinding
++
++
++    override fun onCreateView(
++        inflater: LayoutInflater, container: ViewGroup?,
++        savedInstanceState: Bundle?
++    ): View? {
++        // Inflate the layout for this fragment
++        binding = FragmentSecondBinding.inflate(inflater, container, false)
++        return binding.root
++    }
++
++    companion object {
++
++        @JvmStatic
++        fun newInstance() = SecondFragment()
++    }
++}
+\ No newline at end of file
+Index: app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/FirstViewBindingFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/FirstViewBindingFragment.kt b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/FirstViewBindingFragment.kt
+new file mode 100644
+--- /dev/null	(date 1723321446850)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/FirstViewBindingFragment.kt	(date 1723321446850)
+@@ -0,0 +1,41 @@
++package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.fragment
++
++import android.os.Bundle
++import androidx.fragment.app.Fragment
++import android.view.LayoutInflater
++import android.view.View
++import android.view.ViewGroup
++import com.israelaguilar.androidbasic12.R
++import com.israelaguilar.androidbasic12.databinding.FragmentFirstViewBindingBinding
++
++
++class FirstViewBindingFragment : Fragment() {
++
++    private lateinit var binding: FragmentFirstViewBindingBinding
++
++    override fun onCreateView(
++        inflater: LayoutInflater, container: ViewGroup?,
++        savedInstanceState: Bundle?
++    ): View? {
++        // Inflate the layout for this fragment
++        binding = FragmentFirstViewBindingBinding.inflate(inflater, container, false)
++        return binding.root
++    }
++
++    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
++        super.onViewCreated(view, savedInstanceState)
++
++        binding.btnText.setOnClickListener {
++            parentFragmentManager.beginTransaction()
++                .replace(R.id.fragment, SecondFragment.newInstance())
++                .addToBackStack("SecondFragment")
++                .commit()
++        }
++
++    }
++
++    companion object {
++        @JvmStatic
++        fun newInstance() = FirstViewBindingFragment()
++    }
++}
+\ No newline at end of file
+Index: app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/FirstFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/FirstFragment.kt b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/FirstFragment.kt
+new file mode 100644
+--- /dev/null	(date 1723321446850)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/FirstFragment.kt	(date 1723321446850)
+@@ -0,0 +1,25 @@
++package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.fragment
++
++import android.os.Bundle
++import androidx.fragment.app.Fragment
++import android.view.LayoutInflater
++import android.view.View
++import android.view.ViewGroup
++import com.israelaguilar.androidbasic12.R
++
++
++class FirstFragment : Fragment() {
++
++    override fun onCreateView(
++        inflater: LayoutInflater, container: ViewGroup?,
++        savedInstanceState: Bundle?
++    ): View? {
++        // Inflate the layout for this fragment
++        return inflater.inflate(R.layout.fragment_first, container, false)
++    }
++
++    companion object {
++        @JvmStatic
++        fun newInstance() = FirstFragment
++    }
++}
+\ No newline at end of file
+Index: app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/FragmentActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/FragmentActivity.kt b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/FragmentActivity.kt
+new file mode 100644
+--- /dev/null	(date 1723321446851)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/FragmentActivity.kt	(date 1723321446851)
+@@ -0,0 +1,29 @@
++package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.fragment
++
++import android.os.Bundle
++import androidx.activity.enableEdgeToEdge
++import androidx.appcompat.app.AppCompatActivity
++import androidx.core.view.ViewCompat
++import androidx.core.view.WindowInsetsCompat
++import com.israelaguilar.androidbasic12.R
++import com.israelaguilar.androidbasic12.databinding.ActivityFragmentBinding
++
++class FragmentActivity : AppCompatActivity() {
++
++    private lateinit var binding : ActivityFragmentBinding
++
++    override fun onCreate(savedInstanceState: Bundle?) {
++        super.onCreate(savedInstanceState)
++
++        binding = ActivityFragmentBinding.inflate(layoutInflater)
++        setContentView(binding.root)
++
++
++        supportFragmentManager.beginTransaction()
++            .add(R.id.fragment, FirstViewBindingFragment.newInstance())
++            // En el primer fragmento no se apila por lo regular:
++            // .addToBackStack("FirstViewBindingFragment")
++            .commit()
++
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/values/styles.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/styles.xml b/app/src/main/res/values/styles.xml
+new file mode 100644
+--- /dev/null	(date 1723321446863)
++++ b/app/src/main/res/values/styles.xml	(date 1723321446863)
+@@ -0,0 +1,16 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <style name="RedTextStyle" parent="Widget.AppCompat.TextView">
++        <item name="android:textColor">@color/red</item>
++        <item name="android:textSize">24sp</item>
++        <item name="fontFamily">@font/bernier_shade_regular</item>
++    </style>
++    <style name="YellowTextStyle" parent="Widget.AppCompat.TextView">
++        <item name="android:textColor">@color/yellow</item>
++        <item name="android:textSize">24sp</item>
++        <item name="fontFamily">@font/bernier_shade_regular</item>
++    </style>
++    <style name="Yellow2TextStyle" parent="YellowTextStyle">
++        <item name="android:textColor">@color/black</item>
++    </style>
++</resources>
+\ No newline at end of file
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\n    <string name=\"app_name\">AndroidBasic12</string>\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml
+--- a/app/src/main/res/values/strings.xml	(revision 3d1ebbb30d7666fd9593af57b4cb41b4b2aabbb0)
++++ b/app/src/main/res/values/strings.xml	(date 1723321446863)
+@@ -1,3 +1,8 @@
+ <resources>
+     <string name="app_name">AndroidBasic12</string>
++    <string name="label_continue">Continue</string>
++    <string name="label_cancel">Cancel</string>
++    <string name="label_close">Close</string>
++    <!-- TODO: Remove or change this placeholder text -->
++    <string name="hello_blank_fragment">Hello blank fragment</string>
+ </resources>
+\ No newline at end of file
+Index: app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/params/ParamsActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/params/ParamsActivity.kt b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/params/ParamsActivity.kt
+new file mode 100644
+--- /dev/null	(date 1723321446851)
++++ b/app/src/main/java/com/israelaguilar/androidbasic12/ejerciciosclase/ejercicios2/fragment/params/ParamsActivity.kt	(date 1723321446851)
+@@ -0,0 +1,26 @@
++package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.fragment.params
++
++import android.os.Bundle
++import androidx.activity.enableEdgeToEdge
++import androidx.appcompat.app.AppCompatActivity
++import androidx.core.view.ViewCompat
++import androidx.core.view.WindowInsetsCompat
++import com.israelaguilar.androidbasic12.R
++import com.israelaguilar.androidbasic12.databinding.ActivityFragmentBinding
++import com.israelaguilar.androidbasic12.databinding.ActivityParamsBinding
++
++class ParamsActivity : AppCompatActivity() {
++
++    private lateinit var binding : ActivityParamsBinding
++
++    override fun onCreate(savedInstanceState: Bundle?) {
++        super.onCreate(savedInstanceState)
++
++        binding = ActivityParamsBinding.inflate(layoutInflater)
++        setContentView(binding.root)
++
++        supportFragmentManager.beginTransaction()
++            .add(R.id.fragmentParams, SendParamsFragment.newInstance())
++            .commit()
++    }
++}
+\ No newline at end of file

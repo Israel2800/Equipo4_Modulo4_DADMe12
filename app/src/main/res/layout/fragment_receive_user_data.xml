@@ -3,12 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red"
-    tools:context=".ejerciciosclase.ejercicios2.fragment.params.ReceiveParamsFragment">
+    tools:context=".ejerciciosclase.ejercicios2.fragment.params.ReceiveUserDataFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/tvInfo"
+        android:id="@+id/tvUserLoginInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+
+    <TextView
+        android:id="@+id/tvUserSignUpInfo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/hello_blank_fragment" />
