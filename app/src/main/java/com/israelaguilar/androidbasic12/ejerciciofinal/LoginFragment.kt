@@ -8,8 +8,6 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import com.israelaguilar.androidbasic12.R
 import com.israelaguilar.androidbasic12.databinding.FragmentLoginBinding
-import com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.fragment.params.ReceiveParamsFragment
-import com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.fragment.params.ReceiveUserDataFragment
 
 class LoginFragment : Fragment() {
 
@@ -33,15 +31,21 @@ class LoginFragment : Fragment() {
 
         binding.btnLogin.setOnClickListener {
 
-            val userName = binding.etUserName.text.toString()
+            val email = binding.etEmail.text.toString()
             val password = binding.etPassword.text.toString()
 
-            if(userName.isNotEmpty()){
+            if(email.isNotEmpty()){
                 parentFragmentManager.beginTransaction()
-                    .replace(R.id.fragmentHomeScreen, ReceiveUserDataFragment.newInstance(userName, password))
-                    .addToBackStack("ReceiveUserDataFragment")
+                    .replace(R.id.fragmentHomeScreen, ReceiveUserLoginFragment.newInstance(email, password))
+                    .addToBackStack("ReceiveUserLoginFragment")
                     .commit()
             }
+        }
+
+        binding.tvRegistro.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragmentHomeScreen, SignUpFragment.newInstance())
+                .commit()
         }
 
     }

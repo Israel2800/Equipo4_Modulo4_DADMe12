@@ -1,4 +1,4 @@
-package com.israelaguilar.androidbasic12.ejerciciosclase.ejercicios2.fragment.params
+package com.israelaguilar.androidbasic12.ejerciciofinal
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,20 +8,22 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import com.israelaguilar.androidbasic12.R
-import com.israelaguilar.androidbasic12.databinding.FragmentReceiveUserDataBinding
+import com.israelaguilar.androidbasic12.databinding.FragmentReceiveUserLoginBinding
 
 
-class ReceiveUserDataFragment : Fragment() {
+class ReceiveUserLoginFragment : Fragment() {
 
-    private lateinit var binding : FragmentReceiveUserDataBinding
-    private var userName : String? = ""
-    private var password : String? = ""
+    private lateinit var binding : FragmentReceiveUserLoginBinding
+
+    // Login in data
+    private var email: String? = ""
+    private var password: String? = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         arguments?.let {
-            userName = it.getString("ARG_USERNAME")
+            email = it.getString("ARG_EMAIL")
             password = it.getString("ARG_PASSWORD")
         }
     }
@@ -31,7 +33,8 @@ class ReceiveUserDataFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentReceiveUserDataBinding.inflate(inflater, container, false)
+
+        binding = FragmentReceiveUserLoginBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -41,13 +44,17 @@ class ReceiveUserDataFragment : Fragment() {
 
         setHasOptionsMenu(true)
         (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        binding.tvUserLoginInfo.text = "User name = $userName, Password = $password"
+
+        binding.tvUserEmail.text = "Correo electrónico: $email"
+        binding.tvUserPassword.text = "Contraseña: $password"
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             android.R.id.home -> {
                 requireActivity().onBackPressedDispatcher.onBackPressed()
+                //Toast.makeText(this, "Click in back", Toast.LENGTH_SHORT).show()
             }
         }
         return super.onOptionsItemSelected(item)
@@ -56,9 +63,12 @@ class ReceiveUserDataFragment : Fragment() {
     companion object {
 
         @JvmStatic
-        fun newInstance(userName:String, password:String) = ReceiveUserDataFragment().apply {
+        fun newInstance(
+            email: String,
+            password: String
+        ) = ReceiveUserLoginFragment().apply {
             arguments = Bundle().apply {
-                putString("ARG_USERNAME", userName)
+                putString("ARG_EMAIL", email)
                 putString("ARG_PASSWORD", password)
             }
         }

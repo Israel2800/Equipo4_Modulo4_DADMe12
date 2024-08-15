@@ -18,13 +18,9 @@ class HomeScreenActivity : AppCompatActivity() {
         binding = ActivityHomeScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportFragmentManager.beginTransaction()
-            .add(R.id.fragmentHomeScreen, LoginFragment.newInstance())
-            .commit()
-
-        supportFragmentManager.beginTransaction()
-            .add()(R.id.fragmentHomeScreen, SignUpFragment.newInstance())
-            .commit()
+            supportFragmentManager.beginTransaction()
+                .add(R.id.fragmentHomeScreen, LoginFragment.newInstance())
+                .commit()
 
     }
 }
