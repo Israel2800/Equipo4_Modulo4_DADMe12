@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:orientation="vertical"
     tools:context=".ejerciciofinal.HomeScreenActivity">
 
-    <!-- User Data Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
+    <!-- User Data Section -->
 
         <LinearLayout
             android:id="@+id/userDataSection"
@@ -26,15 +29,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="25sp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="25dp"
                 android:layout_gravity="center_horizontal" />
 
             <ImageView
                 android:id="@+id/ivUserPhoto"
                 android:layout_width="180dp"
                 android:layout_height="180dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/user"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/verified_user"
                 android:layout_gravity="center_horizontal" />
 
             <TextView
@@ -43,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:text="Nombre:"
                 android:textSize="18sp"
-                android:layout_marginTop="30dp" />
+                android:layout_marginTop="20dp" />
 
             <TextView
                 android:id="@+id/tvUserLastName"
@@ -87,6 +90,8 @@
 
         </LinearLayout>
 
+    </ScrollView>
+
         <!-- Login Data Section -->
         <LinearLayout
             android:id="@+id/loginDataSection"
@@ -100,7 +105,7 @@
                 android:id="@+id/tvUserLogin"
                 android:text="¡Bienvenid@!"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="25dp"
                 android:layout_width="wrap_content"
                 android:textSize="25sp"
                 android:layout_height="wrap_content" />
@@ -134,9 +139,4 @@
 
         </LinearLayout>
 
-
-
-
-
-
-</LinearLayout>
+</FrameLayout>

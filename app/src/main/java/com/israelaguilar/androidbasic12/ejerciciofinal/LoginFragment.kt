@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.israelaguilar.androidbasic12.R
 import com.israelaguilar.androidbasic12.databinding.FragmentLoginBinding
 
@@ -44,11 +45,13 @@ class LoginFragment : Fragment() {
             }
         }*/
 
+        binding.btnLogin.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.lightBlue))
         binding.btnLogin.setOnClickListener {
+
             val email = binding.etEmail.text.toString()
             val password = binding.etPassword.text.toString()
 
-            if (email.isNotEmpty()) {
+            if (email.isNotEmpty() && password.isNotEmpty()) {
                 // Iniciar HomeScreenActivity con los datos ingresados
                 val intent = Intent(activity, HomeScreenActivity::class.java).apply {
                     putExtra("ARG_EMAIL", email)
