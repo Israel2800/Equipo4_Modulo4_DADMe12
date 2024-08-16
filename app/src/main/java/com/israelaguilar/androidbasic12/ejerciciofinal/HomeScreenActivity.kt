@@ -47,7 +47,7 @@ class HomeScreenActivity : AppCompatActivity() {
             binding.userDataSection.visibility = View.GONE
             binding.loginDataSection.visibility = View.VISIBLE
 
-            binding.tvUserEmailLogin.text = "Correo electrónico: $loginEmail"
+            binding.tvUserEmailLogin.text = "Correo: $loginEmail"
             binding.tvUserPasswordLogin.text = "Contraseña: $loginPassword"
         } else {
             // Toast.makeText(this, "Únicas vistas disponibles", Toast.LENGTH_SHORT).show()
