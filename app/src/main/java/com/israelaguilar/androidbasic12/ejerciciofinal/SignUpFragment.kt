@@ -1,5 +1,6 @@
 package com.israelaguilar.androidbasic12.ejerciciofinal
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.MenuItem
@@ -46,29 +47,24 @@ class SignUpFragment : Fragment() {
 
         binding.btnSignUp.setOnClickListener {
             if (validateFields(etUser, etLastName, etEmail, rgSex, etPassword, cbAcceptConditions)) {
-                // Get the data from the form
+                // Obtener información del formulario
                 val userName = etUser.text.toString()
                 val userLastName = etLastName.text.toString()
                 val userTitle = spinnerTitle.selectedItem.toString()
                 val userEmail = etEmail.text.toString()
-                val userSex = view?.findViewById<RadioButton>(rgSex.checkedRadioButtonId)?.text.toString()
+                val userSex = view.findViewById<RadioButton>(rgSex.checkedRadioButtonId)?.text.toString()
                 val userPassword = etPassword.text.toString()
 
-                // Create the new fragment instance with the data passed as arguments
-                /*val ReceiveUserDataFragment = ReceiveUserDataFragment.newInstance(
-                    userName = userName,
-                    userLastName = userLastName,
-                    userTitle = userTitle,
-                    userEmail = userEmail,
-                    userSex = userSex,
-                    userPassword = userPassword
-                )*/
-
-                // Navigate to the ReceiveUserDataFragment
-                parentFragmentManager.beginTransaction()
-                    .replace(R.id.fragmentHomeScreen, ReceiveUserDataFragment.newInstance(userName, userLastName, userTitle, userEmail, userSex, userPassword))
-                    .addToBackStack("ReceiveUserDataFragment")
-                    .commit()
+                // Iniciar HomeScreenActivity
+                val intent = Intent(activity, HomeScreenActivity::class.java).apply {
+                    putExtra("USER_NAME", userName)
+                    putExtra("USER_LASTNAME", userLastName)
+                    putExtra("USER_TITLE", userTitle)
+                    putExtra("USER_EMAIL", userEmail)
+                    putExtra("USER_SEX", userSex)
+                    putExtra("USER_PASSWORD", userPassword)
+                }
+                startActivity(intent)
             } else {
                 Toast.makeText(activity, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show()
             }
@@ -111,10 +107,9 @@ class SignUpFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
+        when(item.itemId) {
             android.R.id.home -> {
                 requireActivity().onBackPressedDispatcher.onBackPressed()
-                //Toast.makeText(this, "Click in back", Toast.LENGTH_SHORT).show()
             }
         }
         return super.onOptionsItemSelected(item)

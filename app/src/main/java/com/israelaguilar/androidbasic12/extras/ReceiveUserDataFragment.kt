@@ -1,4 +1,4 @@
-package com.israelaguilar.androidbasic12.ejerciciofinal
+package com.israelaguilar.androidbasic12.extras
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
