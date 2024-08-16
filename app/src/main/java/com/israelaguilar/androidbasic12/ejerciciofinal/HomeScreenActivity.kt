@@ -50,7 +50,7 @@ class HomeScreenActivity : AppCompatActivity() {
             binding.tvUserEmailLogin.text = "Correo electrónico: $loginEmail"
             binding.tvUserPasswordLogin.text = "Contraseña: $loginPassword"
         } else {
-            Toast.makeText(this, "Llene todo los campos", Toast.LENGTH_SHORT).show()
+            // Toast.makeText(this, "Únicas vistas disponibles", Toast.LENGTH_SHORT).show()
         }
     }
 

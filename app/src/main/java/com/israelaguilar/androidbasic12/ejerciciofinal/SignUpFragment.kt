@@ -14,6 +14,7 @@ import android.widget.RadioGroup
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.israelaguilar.androidbasic12.R
 import com.israelaguilar.androidbasic12.databinding.FragmentSignUpBinding
@@ -44,6 +45,8 @@ class SignUpFragment : Fragment() {
         val rgSex: RadioGroup = binding.rgSex
         val etPassword: EditText = binding.etPassword
         val cbAcceptConditions: CheckBox = binding.cbAcceptConditions
+
+        binding.btnSignUp.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.lightBlue))
 
         binding.btnSignUp.setOnClickListener {
             if (validateFields(etUser, etLastName, etEmail, rgSex, etPassword, cbAcceptConditions)) {
@@ -106,8 +109,9 @@ class SignUpFragment : Fragment() {
                 cbAcceptConditions.isChecked
     }
 
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId) {
+        when (item.itemId) {
             android.R.id.home -> {
                 requireActivity().onBackPressedDispatcher.onBackPressed()
             }
