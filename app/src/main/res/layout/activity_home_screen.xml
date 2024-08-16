@@ -25,7 +25,7 @@
 
             <TextView
                 android:id="@+id/tvUserData"
-                android:text="Usuario registrado"
+                android:text="@string/label_user_signed_up"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="25sp"
@@ -38,13 +38,14 @@
                 android:layout_height="180dp"
                 android:layout_marginTop="10dp"
                 android:src="@drawable/verified_user"
+                android:contentDescription="@string/image_registered_user"
                 android:layout_gravity="center_horizontal" />
 
             <TextView
                 android:id="@+id/tvUserName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre:"
+                android:text="@string/label_name"
                 android:textSize="18sp"
                 android:layout_marginTop="20dp" />
 
@@ -52,7 +53,7 @@
                 android:id="@+id/tvUserLastName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Apellido:"
+                android:text="@string/label_last_name"
                 android:textSize="18sp"
                 android:layout_marginTop="20dp" />
 
@@ -60,7 +61,7 @@
                 android:id="@+id/tvUserTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Título:"
+                android:text="@string/label_title"
                 android:textSize="18sp"
                 android:layout_marginTop="20dp" />
 
@@ -68,7 +69,7 @@
                 android:id="@+id/tvUserEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Correo:"
+                android:text="@string/label_email"
                 android:textSize="18sp"
                 android:layout_marginTop="20dp" />
 
@@ -76,7 +77,7 @@
                 android:id="@+id/tvUserSex"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sexo:"
+                android:text="@string/label_sex"
                 android:textSize="18sp"
                 android:layout_marginTop="20dp" />
 
@@ -84,7 +85,7 @@
                 android:id="@+id/tvUserPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Contraseña:"
+                android:text="@string/label_password"
                 android:textSize="18sp"
                 android:layout_marginTop="20dp" />
 
@@ -103,7 +104,7 @@
 
             <TextView
                 android:id="@+id/tvUserLogin"
-                android:text="¡Bienvenid@!"
+                android:text="@string/label_welcome"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="25dp"
                 android:layout_width="wrap_content"
@@ -115,26 +116,24 @@
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/user"
                 android:layout_width="180dp"
-                android:layout_below="@+id/tvUserLogin"
                 android:layout_marginTop="30dp"
+                android:contentDescription="@string/image_login_description"
                 android:layout_height="180dp" />
 
             <TextView
                 android:id="@+id/tvUserEmailLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Correo:"
+                android:text="@string/label_email"
                 android:textSize="18sp"
-                android:layout_below="@id/ivUserPhotoLogin"
                 android:layout_marginTop="20dp" />
 
             <TextView
                 android:id="@+id/tvUserPasswordLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Contraseña:"
+                android:text="@string/label_password"
                 android:textSize="18sp"
-                android:layout_below="@id/tvUserEmailLogin"
                 android:layout_marginTop="20dp" />
 
         </LinearLayout>

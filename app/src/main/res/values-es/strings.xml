@@ -4,4 +4,19 @@
     <string name="label_continue">Continuar</string>
     <string name="label_cancel">Cancelar</string>
     <string name="label_close">Cerrar</string>
+    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
+
+    <string name="label_welcome">¡Bienvenid@!</string>
+    <string name="label_email">Correo:</string>
+    <string name="label_password">Contraseña:</string>
+    <string name="label_user_signed_up">Usuario registrado</string>
+    <string name="label_name">Nombre:</string>
+    <string name="label_last_name">Apellido:</string>
+    <string name="label_title">Título:</string>
+    <string name="label_sex">Sexo:</string>
+    <string name="image_login_description">Imagen de inicio de sesión</string>
+    <string name="image_registered_user">Imagen de registro de usuario</string>
+
+
+
 </resources>
