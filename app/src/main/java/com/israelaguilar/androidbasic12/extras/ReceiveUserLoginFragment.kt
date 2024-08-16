@@ -1,4 +1,4 @@
-package com.israelaguilar.androidbasic12.ejerciciofinal
+package com.israelaguilar.androidbasic12.extras
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,6 @@ import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import com.israelaguilar.androidbasic12.R
 import com.israelaguilar.androidbasic12.databinding.FragmentReceiveUserLoginBinding
 
 
