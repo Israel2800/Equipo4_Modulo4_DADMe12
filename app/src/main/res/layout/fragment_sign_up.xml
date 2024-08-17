@@ -6,11 +6,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ejerciciofinal.SignUpFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
         android:id="@+id/btnSignUpContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -23,9 +22,8 @@
                 android:id="@+id/tvUpdateInformation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Registrar Usuario"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
+                android:text="@string/label_register_user"
+                style="@style/BlueTextStyle"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/allFields"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -47,21 +45,21 @@
                     android:id="@+id/etUser"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:hint="Ingresar nombre" />
+                    android:hint="@string/label_insert_name" />
 
                 <EditText
                     android:id="@+id/etLastName"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:hint="Ingresar apellido" />
+                    android:hint="@string/label_insert_last_name" />
 
                 <TextView
                     android:id="@+id/tvSpinnerTitle"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Título:" />
+                    android:text="@string/label_title" />
 
                 <Spinner
                     android:id="@+id/spinnerTitle"
@@ -76,14 +74,14 @@
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:hint="Ingresar correo electrónico" />
+                    android:hint="@string/hint_type_email" />
 
                 <TextView
                     android:id="@+id/tvSex"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Sexo:" />
+                    android:text="@string/label_sex" />
 
                 <RadioGroup
                     android:id="@+id/rgSex"
@@ -98,7 +96,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_weight="1"
-                        android:text="Mujer" />
+                        android:text="@string/label_woman" />
 
                     <RadioButton
                         android:id="@+id/rbHombre"
@@ -106,7 +104,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="end"
                         android:layout_weight="1"
-                        android:text="Hombre" />
+                        android:text="@string/label_man" />
 
                 </RadioGroup>
 
@@ -115,7 +113,7 @@
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:hint="Ingresar contraseña"
+                    android:hint="@string/hint_type_password"
                     android:inputType="textPassword" />
 
                 <TextView
@@ -126,14 +124,14 @@
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Aceptación de términos y condiciones:" />
+                    android:text="@string/label_terms" />
 
                 <CheckBox
                     android:id="@+id/cbAcceptConditions"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="Aceptar términos"
+                    android:text="@string/label_accept_terms"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -144,7 +142,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Registrar"
+                android:text="@string/label_register_user"
                 android:textAllCaps="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

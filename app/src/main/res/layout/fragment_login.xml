@@ -13,9 +13,8 @@
         android:id="@+id/tvLoginText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Iniciar sesión"
-        android:textColor="@android:color/black"
-        android:textSize="25sp"
+        android:text="@string/label_login"
+        style="@style/BlueTextStyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="25dp"
@@ -46,7 +45,7 @@
             android:id="@+id/etEmail"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:hint="Ingresar correo electrónico" />
+            android:hint="@string/hint_type_email" />
 
         <EditText
             android:id="@+id/etPassword"
@@ -54,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:password="true"
-            android:hint="Ingresar contraseña" />
+            android:hint="@string/hint_type_password" />
 
     </LinearLayout>
 
@@ -63,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Iniciar sesión"
+        android:text="@string/label_login"
         android:textAllCaps="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,7 +72,7 @@
         android:id="@+id/tvRegistro"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="¿Aún no tienes cuenta?"
+        android:text="@string/label_register_text"
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_width="wrap_content"

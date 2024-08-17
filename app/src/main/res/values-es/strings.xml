@@ -16,6 +16,26 @@
     <string name="label_sex">Sexo:</string>
     <string name="image_login_description">Imagen de inicio de sesión</string>
     <string name="image_registered_user">Imagen de registro de usuario</string>
+    <string name="label_login">Iniciar sesión</string>
+    <string name="hint_type_email">Ingresar correo electrónico</string>
+    <string name="hint_type_password">Ingresar contraseña</string>
+    <string name="label_register_text">¿Aún no tienes cuenta?</string>
+    <string name="label_register_user">Registrar usuario</string>
+    <string name="label_insert_name">Ingresar nombre</string>
+    <string name="label_insert_last_name">Ingresar apellido</string>
+    <string name="label_woman">Mujer</string>
+    <string name="label_man">Hombre</string>
+    <string name="label_terms">Aceptar términos y condiciones:</string>
+    <string name="label_accept_terms">Aceptar términos</string>
+
+
+
+
+
+
+
+
+
 
 
 
