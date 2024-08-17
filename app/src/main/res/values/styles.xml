@@ -13,4 +13,9 @@
     <style name="Yellow2TextStyle" parent="YellowTextStyle">
         <item name="android:textColor">@color/black</item>
     </style>
+    <style name="BlueTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">30sp</item>
+        <item name="fontFamily">@font/akatab_bold</item>
+    </style>
 </resources>

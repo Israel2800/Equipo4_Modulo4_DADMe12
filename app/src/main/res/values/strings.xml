@@ -9,13 +9,31 @@
     <string name="label_welcome">Welcome!</string>
     <string name="label_email">Email:</string>
     <string name="label_password">Password:</string>
-    <string name="label_user_signed_up">Registered user</string>
+    <string name="label_user_signed_up">User registered</string>
     <string name="label_name">Name:</string>
     <string name="label_last_name">Last name:</string>
     <string name="label_title">Title:</string>
     <string name="label_sex">Sex:</string>
     <string name="image_login_description">Login image</string>
     <string name="image_registered_user">Registered user image</string>
+    <string name="label_login">Log in</string>
+    <string name="hint_type_email">Insert email</string>
+    <string name="hint_type_password">Insert password</string>
+    <string name="label_register_text">Do not have an account yet?</string>
+    <string name="label_register_user">Sign up</string>
+    <string name="label_insert_name">Insert name</string>
+    <string name="label_insert_last_name">Insert last name</string>
+    <string name="label_woman">Woman</string>
+    <string name="label_man">Man</string>
+    <string name="label_terms">Accept terms and conditions:</string>
+    <string name="label_accept_terms">Accept terms</string>
+
+
+
+
+
+
+
 
 
 
